@@ -23,7 +23,8 @@
   "customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-dotnettools.csdevkit"
+				"ms-dotnettools.csdevkit",
+				"zbecknell.t4-support"
 			]
 		}
 	}
