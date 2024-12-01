@@ -1,0 +1,4 @@
+{
+	"dotnet.defaultSolution": "Crews.PlanningCenter.Models.sln",
+	"dotnet.unitTests.runSettingsPath": "Crews.PlanningCenter.Models.Tests/.runsettings"
+}
