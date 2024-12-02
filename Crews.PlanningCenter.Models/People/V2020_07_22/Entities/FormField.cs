@@ -10,7 +10,7 @@ public record FormField
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -33,7 +33,7 @@ public record FormField
   public string? Settings { get; init; }
 
   /// <summary>
-  /// Possible values: `string`, `text`, `checkboxes`, `dropdown`, `date`, `phone_number`, `address`, `birthday`, `gender`, `custom_field`, `note`, `workflow`, `heading`, `number`, `boolean`, `file`, `medical`, `workflow_checkbox`, `workflow_checkboxes`, `workflow_dropdown`, `marital_status`, `anniversary`, `grade`, `primary_campus`, `school`, or `household`
+  /// Possible values: <c>string</c>, <c>text</c>, <c>checkboxes</c>, <c>dropdown</c>, <c>date</c>, <c>phone_number</c>, <c>address</c>, <c>birthday</c>, <c>gender</c>, <c>custom_field</c>, <c>note</c>, <c>workflow</c>, <c>heading</c>, <c>number</c>, <c>boolean</c>, <c>file</c>, <c>medical</c>, <c>workflow_checkbox</c>, <c>workflow_checkboxes</c>, <c>workflow_dropdown</c>, <c>marital_status</c>, <c>anniversary</c>, <c>grade</c>, <c>primary_campus</c>, <c>school</c>, or <c>household</c>
   /// </summary>
   public string? FieldType { get; init; }
 

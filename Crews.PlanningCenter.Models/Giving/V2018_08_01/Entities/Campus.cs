@@ -3,17 +3,16 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2018_08_01.Entities;
 
 /// <summary>
-/// A `Campus` that has been added to your `Organization`.
+/// A <c>Campus</c> that has been added to your <c>Organization</c>.
 /// 
-/// `Campus`es can be especially useful in filtering `Donation`s across the various locations of your `Organization`.
-/// 
+/// <c>Campus</c>es can be especially useful in filtering <c>Donation</c>s across the various locations of your <c>Organization</c>.
 /// </summary>
 public record Campus
 {
   /// <summary>
   /// The unique identifier for a campus.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The name for a campus. Campus names can be set via Accounts or the People API.

@@ -3,19 +3,18 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.CheckIns.V2023_04_05.Entities;
 
 /// <summary>
-/// Labels can be set to print for events (through `EventLabel`s),
-/// locations (through `LocationLabel`s) or options.
+/// Labels can be set to print for events (through <c>EventLabel</c>s),
+/// locations (through <c>LocationLabel</c>s) or options.
 /// Label type (security label / name label) is expressed with the
-/// `prints_for` attribute. `prints_for="Person"` is a name label,
-/// `prints_for="Group"` is a security label.
-/// 
+/// <c>prints_for</c> attribute. <c>prints_for="Person"</c> is a name label,
+/// <c>prints_for="Group"</c> is a security label.
 /// </summary>
 public record Label
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

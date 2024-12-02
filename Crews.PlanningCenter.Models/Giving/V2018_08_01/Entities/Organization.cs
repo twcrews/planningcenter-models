@@ -3,15 +3,14 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2018_08_01.Entities;
 
 /// <summary>
-/// The root level `Organization` record which serves as a link to `Donation`s, `People`, `Fund`s, etc.
-/// 
+/// The root level <c>Organization</c> record which serves as a link to <c>Donation</c>s, <c>People</c>, <c>Fund</c>s, etc.
 /// </summary>
 public record Organization
 {
   /// <summary>
   /// The unique identifier for an organization.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The name for an organization.

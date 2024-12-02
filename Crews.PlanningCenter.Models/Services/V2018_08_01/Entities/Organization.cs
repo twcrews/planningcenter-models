@@ -10,7 +10,7 @@ public record Organization
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -23,7 +23,7 @@ public record Organization
   public DateTime? CreatedAt { get; init; }
 
   /// <summary>
-  /// Two possible values, `US` `EU`
+  /// Two possible values, <c>US</c> <c>EU</c>
   /// </summary>
   public int? DateFormat { get; init; }
 
@@ -63,7 +63,7 @@ public record Organization
   public string? OwnerName { get; init; }
 
   /// <summary>
-  /// Possible values: `editor`, `administrator`, `site_administrator`
+  /// Possible values: <c>editor</c>, <c>administrator</c>, <c>site_administrator</c>
   /// </summary>
   public string? RequiredToSetDownloadPermission { get; init; }
 

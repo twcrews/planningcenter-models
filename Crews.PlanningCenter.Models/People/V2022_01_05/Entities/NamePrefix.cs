@@ -10,7 +10,7 @@ public record NamePrefix
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

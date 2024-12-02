@@ -4,15 +4,14 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2019_07_17.Entities;
 
 /// <summary>
 /// An organization which has people and events.
-/// This contains its date format & time zone preferences.
-/// 
+/// This contains its date format &amp; time zone preferences.
 /// </summary>
 public record Organization
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

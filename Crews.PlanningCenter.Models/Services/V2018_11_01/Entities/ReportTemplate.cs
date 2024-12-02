@@ -10,7 +10,7 @@ public record ReportTemplate
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -23,7 +23,7 @@ public record ReportTemplate
   public string? Title { get; init; }
 
   /// <summary>
-  /// Possible values: `ReportMatrix`, `ReportPeople`, `ReportPlan`
+  /// Possible values: <c>ReportMatrix</c>, <c>ReportPeople</c>, <c>ReportPlan</c>
   /// </summary>
   public string? Type { get; init; }
 

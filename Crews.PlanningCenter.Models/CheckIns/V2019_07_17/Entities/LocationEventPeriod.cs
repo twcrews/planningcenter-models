@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2019_07_17.Entities;
 
 /// <summary>
 /// Counts check-ins for a location during a certain event period.
-/// 
 /// </summary>
 public record LocationEventPeriod
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

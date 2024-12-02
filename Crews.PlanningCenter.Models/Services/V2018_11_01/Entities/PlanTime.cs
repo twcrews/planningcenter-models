@@ -10,7 +10,7 @@ public record PlanTime
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -35,7 +35,6 @@ public record PlanTime
   /// - service
   /// 
   /// - other
-  /// 
   /// </summary>
   public string? TimeType { get; init; }
 

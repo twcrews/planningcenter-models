@@ -10,7 +10,7 @@ public record TagGroup
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -28,7 +28,7 @@ public record TagGroup
   public bool? AllowMultipleSelections { get; init; }
 
   /// <summary>
-  /// Scopes a tag group to `person`, `song`, `arrangement`, `media`
+  /// Scopes a tag group to <c>person</c>, <c>song</c>, <c>arrangement</c>, <c>media</c>
   /// </summary>
   public string? TagsFor { get; init; }
 

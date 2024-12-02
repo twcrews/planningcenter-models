@@ -3,17 +3,16 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 
 /// <summary>
-/// A `Designation` conveys how much of a `Donation` goes to a particular `Fund`.
+/// A <c>Designation</c> conveys how much of a <c>Donation</c> goes to a particular <c>Fund</c>.
 /// 
-/// `Designation` details are required when creating a `Donation`. If all of a `Donation` is going to a single `Fund`, it will only have one `Designation`. Similarly, to split a `Donation` between multiple `Fund`s, you can use multiple `Designation`s.
-/// 
+/// <c>Designation</c> details are required when creating a <c>Donation</c>. If all of a <c>Donation</c> is going to a single <c>Fund</c>, it will only have one <c>Designation</c>. Similarly, to split a <c>Donation</c> between multiple <c>Fund</c>s, you can use multiple <c>Designation</c>s.
 /// </summary>
 public record Designation
 {
   /// <summary>
   /// The unique identifier for a designation.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Required. The number of cents being donated to a designation's associated fund.
@@ -21,7 +20,7 @@ public record Designation
   public int? AmountCents { get; init; }
 
   /// <summary>
-  /// The currency of `amount_cents`. Set to the currency of the associated organization.
+  /// The currency of <c>amount_cents</c>. Set to the currency of the associated organization.
   /// </summary>
   public string? AmountCurrency { get; init; }
 

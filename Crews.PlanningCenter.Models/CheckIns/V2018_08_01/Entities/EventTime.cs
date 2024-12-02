@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2018_08_01.Entities;
 
 /// <summary>
 /// A time that someone may check in. Times are copied from session to session.
-/// 
 /// </summary>
 public record EventTime
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

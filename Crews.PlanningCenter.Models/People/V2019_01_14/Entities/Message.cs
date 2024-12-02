@@ -10,10 +10,10 @@ public record Message
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// Possible values: `email`, `sms`, or `church_center_message`
+  /// Possible values: <c>email</c>, <c>sms</c>, or <c>church_center_message</c>
   /// </summary>
   public string? Kind { get; init; }
 

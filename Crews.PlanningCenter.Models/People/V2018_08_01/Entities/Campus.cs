@@ -10,7 +10,7 @@ public record Campus
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -88,7 +88,7 @@ public record Campus
   public bool? GeolocationSetManually { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public string? TimeZoneRaw { get; init; }
 

@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2021_07_20.Entities;
 
 /// <summary>
 /// A room or resource request for a specific event.
-/// 
 /// </summary>
 public record EventResourceRequest
 {
   /// <summary>
   /// Unique identifier for the request
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Whether or not an email has been sent to request approval
@@ -20,10 +19,9 @@ public record EventResourceRequest
 
   /// <summary>
   /// Possible values:
-  /// - `A`: approved
-  /// - `P`: pending
-  /// - `R`: rejected
-  /// 
+  /// - <c>A</c>: approved
+  /// - <c>P</c>: pending
+  /// - <c>R</c>: rejected
   /// </summary>
   public string? ApprovalStatus { get; init; }
 

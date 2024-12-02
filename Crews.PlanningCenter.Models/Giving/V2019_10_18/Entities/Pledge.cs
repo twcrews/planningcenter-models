@@ -3,15 +3,14 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 
 /// <summary>
-/// A `Pledge` made by a `Person` toward a particular `PledgeCampaign`.
-/// 
+/// A <c>Pledge</c> made by a <c>Person</c> toward a particular <c>PledgeCampaign</c>.
 /// </summary>
 public record Pledge
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

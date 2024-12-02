@@ -10,7 +10,7 @@ public record ServiceType
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -66,7 +66,6 @@ public record ServiceType
   /// 
   /// A color is the hexadecimal value of a valid color e.g. #FFFFFF
   /// Valid colors values are #e8f6df, #e0f7ff, #e6e2fd, #ffe0e8, #ffedd1, #cfcfcf, #eaebeb, and #ffffff
-  /// 
   /// </summary>
   public IEnumerable<JsonElement>? CustomItemTypes { get; init; }
 
@@ -79,7 +78,6 @@ public record ServiceType
   /// 
   /// A color is the hexadecimal value of a valid color e.g. #FFFFFF
   /// Valid colors values are #e8f6df, #e0f7ff, #e6e2fd, #ffe0e8, #ffedd1, #cfcfcf, #eaebeb, and #ffffff
-  /// 
   /// </summary>
   public IEnumerable<JsonElement>? StandardItemTypes { get; init; }
 

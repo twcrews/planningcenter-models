@@ -10,11 +10,10 @@ public record ChannelDefaultTime
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The day of the week. 0 is Sunday, 1 is Monday, etc.
-  /// 
   /// </summary>
   public int? DayOfWeek { get; init; }
 
@@ -29,8 +28,7 @@ public record ChannelDefaultTime
   public int? Minute { get; init; }
 
   /// <summary>
-  /// Possible values: `weekly`
-  /// 
+  /// Possible values: <c>weekly</c>
   /// </summary>
   public string? Frequency { get; init; }
 

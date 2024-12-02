@@ -10,7 +10,7 @@ public record Media
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -80,28 +80,27 @@ public record Media
   /// <summary>
   /// Possible Values:
   /// 
-  /// - `audio`
+  /// - <c>audio</c>
   /// 
-  /// - `background_audio`
+  /// - <c>background_audio</c>
   /// 
-  /// - `background_image`
+  /// - <c>background_image</c>
   /// 
-  /// - `background_video`
+  /// - <c>background_video</c>
   /// 
-  /// - `countdown`
+  /// - <c>countdown</c>
   /// 
-  /// - `document`
+  /// - <c>document</c>
   /// 
-  /// - `drama`
+  /// - <c>drama</c>
   /// 
-  /// - `image`
+  /// - <c>image</c>
   /// 
-  /// - `powerpoint`
+  /// - <c>powerpoint</c>
   /// 
-  /// - `song_video`
+  /// - <c>song_video</c>
   /// 
-  /// - `video`
-  /// 
+  /// - <c>video</c>
   /// </summary>
   public string? MediaType { get; init; }
 

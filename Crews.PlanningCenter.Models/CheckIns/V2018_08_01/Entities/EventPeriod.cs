@@ -8,14 +8,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2018_08_01.Entities;
 /// An event period has event times, which is what people select
 /// when they actually check in. When new sessions are created, times
 /// are copied from one session to the next.
-/// 
 /// </summary>
 public record EventPeriod
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

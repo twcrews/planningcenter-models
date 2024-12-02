@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2022_07_07.Entities;
 
 /// <summary>
 /// A grouping of tags for organizational purposes.
-/// 
 /// </summary>
 public record TagGroup
 {
   /// <summary>
   /// Unique identifier for the tag group
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the tag group was created
@@ -29,8 +28,7 @@ public record TagGroup
   public DateTime? UpdatedAt { get; init; }
 
   /// <summary>
-  /// - `true` indicates tag from this tag group must be applied when creating an event
-  /// 
+  /// - <c>true</c> indicates tag from this tag group must be applied when creating an event
   /// </summary>
   public bool? Required { get; init; }
 

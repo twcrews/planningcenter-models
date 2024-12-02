@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2020_04_08.Entities;
 
 /// <summary>
 /// The people in your organization with access to Calendar.
-/// 
 /// </summary>
 public record Person
 {
   /// <summary>
   /// Unique identifier for the person
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the person was created
@@ -51,13 +50,12 @@ public record Person
   /// <summary>
   /// An object containing the person's contact data.
   /// 
-  /// This can include an array of `email_addresses`, `addresses` and `phone_numbers`
-  /// 
+  /// This can include an array of <c>email_addresses</c>, <c>addresses</c> and <c>phone_numbers</c>
   /// </summary>
   public string? ContactData { get; init; }
 
   /// <summary>
-  /// `M` indicates male, `F` indicates female
+  /// <c>M</c> indicates male, <c>F</c> indicates female
   /// </summary>
   public string? Gender { get; init; }
 
@@ -68,32 +66,29 @@ public record Person
 
   /// <summary>
   /// Possible values:
-  /// - `Mr.`
-  /// - `Mrs.`
-  /// - `Ms.`
-  /// - `Miss`
-  /// - `Dr.`
-  /// - `Rev.`
-  /// 
+  /// - <c>Mr.</c>
+  /// - <c>Mrs.</c>
+  /// - <c>Ms.</c>
+  /// - <c>Miss</c>
+  /// - <c>Dr.</c>
+  /// - <c>Rev.</c>
   /// </summary>
   public string? NamePrefix { get; init; }
 
   /// <summary>
   /// Possible values:
-  /// - `Jr.`
-  /// - `Sr.`
-  /// - `Ph.D.`
-  /// - `II`
-  /// - `III`
-  /// 
+  /// - <c>Jr.</c>
+  /// - <c>Sr.</c>
+  /// - <c>Ph.D.</c>
+  /// - <c>II</c>
+  /// - <c>III</c>
   /// </summary>
   public string? NameSuffix { get; init; }
 
   /// <summary>
   /// If the person is a member of an approval group, the number of EventResourceRequests needing resolution.
   /// 
-  /// If `resolves_conflicts` is `true`, the count will also include the number of Conflicts needing resolution.
-  /// 
+  /// If <c>resolves_conflicts</c> is <c>true</c>, the count will also include the number of Conflicts needing resolution.
   /// </summary>
   public int? PendingRequestCount { get; init; }
 
@@ -114,11 +109,10 @@ public record Person
 
   /// <summary>
   /// Possible values:
-  /// - `active`: The person is marked "active" in People
-  /// - `inactive`: The person is marked "inactive" in People
+  /// - <c>active</c>: The person is marked "active" in People
+  /// - <c>inactive</c>: The person is marked "inactive" in People
   /// 
-  /// 
-  /// Possible values: `active`, `pending`, or `inactive`
+  /// Possible values: <c>active</c>, <c>pending</c>, or <c>inactive</c>
   /// </summary>
   public string? Status { get; init; }
 
@@ -145,7 +139,7 @@ public record Person
   /// <summary>
   /// Indicates whether the person is a member of at least one approval group
   /// 
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public bool? MemberOfApprovalGroups { get; init; }
 

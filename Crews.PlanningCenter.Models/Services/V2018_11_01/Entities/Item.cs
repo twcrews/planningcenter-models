@@ -10,7 +10,7 @@ public record Item
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -40,16 +40,15 @@ public record Item
   /// <summary>
   /// There are 4 possible values:
   /// 
-  /// - `song`: The item is a song
+  /// - <c>song</c>: The item is a song
   /// 
-  /// - `header`: The item is a header
+  /// - <c>header</c>: The item is a header
   /// 
-  /// - `media`: The item is a piece of media
+  /// - <c>media</c>: The item is a piece of media
   /// 
-  /// - `item`: The default item type
+  /// - <c>item</c>: The default item type
   /// 
-  /// This value can only be set when an item is created. The only value that you can pass is `header`. If no value is passed then `item` will be used. To create a media item you'll attach a video media to the item, and to create a song item, you'll attach a song.
-  /// 
+  /// This value can only be set when an item is created. The only value that you can pass is <c>header</c>. If no value is passed then <c>item</c> will be used. To create a media item you'll attach a video media to the item, and to create a song item, you'll attach a song.
   /// </summary>
   public string? ItemType { get; init; }
 
@@ -61,12 +60,11 @@ public record Item
   /// <summary>
   /// There are 3 possible values:
   /// 
-  /// - `pre`: the item happens before the service starts
+  /// - <c>pre</c>: the item happens before the service starts
   /// 
-  /// - `post`: the item happens after the service ends
+  /// - <c>post</c>: the item happens after the service ends
   /// 
-  /// - `during`: the item happens during the service
-  /// 
+  /// - <c>during</c>: the item happens during the service
   /// </summary>
   public string? ServicePosition { get; init; }
 
@@ -84,7 +82,6 @@ public record Item
   /// An array of strings containing a label and a number describing the section:
   /// 
   /// ['Verse 1', 'Chorus 1', 'Verse 2']
-  /// 
   /// </summary>
   public IEnumerable<JsonElement>? CustomArrangementSequence { get; init; }
 

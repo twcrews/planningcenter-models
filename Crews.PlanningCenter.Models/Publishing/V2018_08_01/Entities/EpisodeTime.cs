@@ -10,7 +10,7 @@ public record EpisodeTime
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -38,14 +38,12 @@ public record EpisodeTime
   public double? CurrentTimestamp { get; init; }
 
   /// <summary>
-  /// Possible values: `upcoming`, `active`, `over`
-  /// 
+  /// Possible values: <c>upcoming</c>, <c>active</c>, <c>over</c>
   /// </summary>
   public string? CurrentState { get; init; }
 
   /// <summary>
-  /// Possible values: `vimeo`, `youtube`, `livestream_com`, `resi`, `facebook`, `boxcast`
-  /// 
+  /// Possible values: <c>vimeo</c>, <c>youtube</c>, <c>livestream_com</c>, <c>resi</c>, <c>facebook</c>, <c>boxcast</c>
   /// </summary>
   public string? StreamingService { get; init; }
 

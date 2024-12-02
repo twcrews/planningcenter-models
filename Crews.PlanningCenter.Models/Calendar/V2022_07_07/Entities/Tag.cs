@@ -7,17 +7,16 @@ namespace Crews.PlanningCenter.Models.Calendar.V2022_07_07.Entities;
 /// 
 /// Applied tags can be used to filter events on the calendar or
 /// filter events for reports, iCal feeds, kiosk, and the widget.
-/// 
 /// </summary>
 public record Tag
 {
   /// <summary>
   /// Unique identifier for the tag
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// `true` indicates that this tag is used as a category on Church Center
+  /// <c>true</c> indicates that this tag is used as a category on Church Center
   /// </summary>
   public bool? ChurchCenterCategory { get; init; }
 
@@ -42,7 +41,6 @@ public record Tag
   /// 
   /// If the tag does not belong to a TagGroup,
   /// position indicates place in list under "Individual Tags" in the UI.
-  /// 
   /// </summary>
   public double? Position { get; init; }
 

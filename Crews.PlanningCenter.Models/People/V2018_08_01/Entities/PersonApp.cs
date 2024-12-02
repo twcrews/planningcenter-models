@@ -10,7 +10,7 @@ public record PersonApp
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -18,7 +18,7 @@ public record PersonApp
   public bool? AllowPcoLogin { get; init; }
 
   /// <summary>
-  /// Possible values: `no_access`, `viewer`, or `editor`
+  /// Possible values: <c>no_access</c>, <c>viewer</c>, or <c>editor</c>
   /// </summary>
   public string? PeoplePermissions { get; init; }
 

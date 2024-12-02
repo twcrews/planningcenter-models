@@ -10,7 +10,7 @@ public record PhoneNumber
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -63,7 +63,7 @@ public record PhoneNumber
   public string? CountryCode { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public string? FormattedNumber { get; init; }
 

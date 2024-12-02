@@ -5,14 +5,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2024_11_07.Entities;
 /// <summary>
 /// A CheckInTime combines an EventTime and a Location, and associates it with
 /// the parent CheckIn.
-/// 
 /// </summary>
 public record CheckInTime
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

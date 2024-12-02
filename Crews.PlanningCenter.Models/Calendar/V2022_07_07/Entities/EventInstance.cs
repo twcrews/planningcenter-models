@@ -5,16 +5,15 @@ namespace Crews.PlanningCenter.Models.Calendar.V2022_07_07.Entities;
 /// <summary>
 /// A specific occurrence of an event.
 /// 
-/// If the event is recurring, `recurrence` will be set and
-/// `recurrence_description` will provide an overview of the recurrence pattern.
-/// 
+/// If the event is recurring, <c>recurrence</c> will be set and
+/// <c>recurrence_description</c> will provide an overview of the recurrence pattern.
 /// </summary>
 public record EventInstance
 {
   /// <summary>
   /// Unique identifier for the event instance
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Indicates whether event instance lasts all day
@@ -23,7 +22,6 @@ public record EventInstance
 
   /// <summary>
   /// Compact representation of event instance's recurrence pattern
-  /// 
   /// </summary>
   public string? CompactRecurrenceDescription { get; init; }
 
@@ -44,13 +42,11 @@ public record EventInstance
 
   /// <summary>
   /// For a recurring event instance, the interval of how often the event instance occurs
-  /// 
   /// </summary>
   public string? Recurrence { get; init; }
 
   /// <summary>
   /// Longer description of the event instance's recurrence pattern
-  /// 
   /// </summary>
   public string? RecurrenceDescription { get; init; }
 

@@ -10,7 +10,7 @@ public record Zoom
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The aspect ratio of the device this zoom is for. It is rounded to the nearest 3 decimal places.

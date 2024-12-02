@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2021_07_20.Entities;
 
 /// <summary>
 /// An organizational folder containing rooms or resources.
-/// 
 /// </summary>
 public record ResourceFolder
 {
   /// <summary>
   /// Unique identifier for the folder
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the folder was created
@@ -34,15 +33,14 @@ public record ResourceFolder
   public string? Ancestry { get; init; }
 
   /// <summary>
-  /// The type of folder, can either be `Room` or `Resource`
+  /// The type of folder, can either be <c>Room</c> or <c>Resource</c>
   /// </summary>
   public string? Kind { get; init; }
 
   /// <summary>
   /// A string representing the location of the folder if it is nested.
   /// 
-  /// Each parent folder is separated by `/`
-  /// 
+  /// Each parent folder is separated by <c>/</c>
   /// </summary>
   public string? PathName { get; init; }
 

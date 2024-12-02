@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2018_08_01.Entities;
 
 /// <summary>
 /// A template for generating a report.
-/// 
 /// </summary>
 public record ReportTemplate
 {
   /// <summary>
   /// Unique identifier for the report
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The contents of the report template

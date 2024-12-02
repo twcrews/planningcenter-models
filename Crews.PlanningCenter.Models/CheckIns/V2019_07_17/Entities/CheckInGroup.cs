@@ -3,16 +3,15 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.CheckIns.V2019_07_17.Entities;
 
 /// <summary>
-/// When one or more people check in, they're grouped in a `CheckInGroup`.
+/// When one or more people check in, they're grouped in a <c>CheckInGroup</c>.
 /// These check-ins all have the same "checked-in by" person.
-/// 
 /// </summary>
 public record CheckInGroup
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -31,13 +30,12 @@ public record CheckInGroup
 
   /// <summary>
   /// Possible values:
-  /// - `ready`: This group isn't printed or canceled yet
-  /// - `printed`: This group was successfully printed at a station
-  /// - `canceled`: This group was canceled at a station
-  /// - `skipped`: This group had no labels to print, so it was never printed.
+  /// - <c>ready</c>: This group isn't printed or canceled yet
+  /// - <c>printed</c>: This group was successfully printed at a station
+  /// - <c>canceled</c>: This group was canceled at a station
+  /// - <c>skipped</c>: This group had no labels to print, so it was never printed.
   /// 
-  /// 
-  /// Possible values: `not_ready`, `ready`, `printed`, `canceled`, or `skipped`
+  /// Possible values: <c>not_ready</c>, <c>ready</c>, <c>printed</c>, <c>canceled</c>, or <c>skipped</c>
   /// </summary>
   public string? PrintStatus { get; init; }
 

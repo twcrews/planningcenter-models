@@ -10,7 +10,7 @@ public record Arrangement
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -35,36 +35,35 @@ public record Arrangement
   /// <summary>
   /// Possible Values:
   /// 
-  /// - `2/2`
+  /// - <c>2/2</c>
   /// 
-  /// - `2/4`
+  /// - <c>2/4</c>
   /// 
-  /// - `3/2`
+  /// - <c>3/2</c>
   /// 
-  /// - `3/4`
+  /// - <c>3/4</c>
   /// 
-  /// - `4/2`
+  /// - <c>4/2</c>
   /// 
-  /// - `4/4`
+  /// - <c>4/4</c>
   /// 
-  /// - `5/4`
+  /// - <c>5/4</c>
   /// 
-  /// - `6/4`
+  /// - <c>6/4</c>
   /// 
-  /// - `3/8`
+  /// - <c>3/8</c>
   /// 
-  /// - `6/8`
+  /// - <c>6/8</c>
   /// 
-  /// - `7/4`
+  /// - <c>7/4</c>
   /// 
-  /// - `7/8`
+  /// - <c>7/8</c>
   /// 
-  /// - `9/8`
+  /// - <c>9/8</c>
   /// 
-  /// - `12/4`
+  /// - <c>12/4</c>
   /// 
-  /// - `12/8`
-  /// 
+  /// - <c>12/8</c>
   /// </summary>
   public string? Meter { get; init; }
 
@@ -81,44 +80,41 @@ public record Arrangement
   /// <summary>
   /// Possible Values:
   /// 
-  /// - `0.0in`
+  /// - <c>0.0in</c>
   /// 
-  /// - `0.25in`
+  /// - <c>0.25in</c>
   /// 
-  /// - `0.5in`
+  /// - <c>0.5in</c>
   /// 
-  /// - `0.75in`
+  /// - <c>0.75in</c>
   /// 
-  /// - `1.0in`
-  /// 
+  /// - <c>1.0in</c>
   /// </summary>
   public string? PrintMargin { get; init; }
 
   /// <summary>
   /// Possible Values:
   /// 
-  /// - `Portrait`
+  /// - <c>Portrait</c>
   /// 
-  /// - `Landscape`
-  /// 
+  /// - <c>Landscape</c>
   /// </summary>
   public string? PrintOrientation { get; init; }
 
   /// <summary>
   /// Possible Values:
   /// 
-  /// - `Widescreen (16x9)`
+  /// - <c>Widescreen (16x9)</c>
   /// 
-  /// - `Fullscreen (4x3)`
+  /// - <c>Fullscreen (4x3)</c>
   /// 
-  /// - `A4`
+  /// - <c>A4</c>
   /// 
-  /// - `Letter`
+  /// - <c>Letter</c>
   /// 
-  /// - `Legal`
+  /// - <c>Legal</c>
   /// 
-  /// - `11x17`
-  /// 
+  /// - <c>11x17</c>
   /// </summary>
   public string? PrintPageSize { get; init; }
 
@@ -129,7 +125,6 @@ public record Arrangement
 
   /// <summary>
   /// A string of lyrics and chords. Supports standard and ChordPro formats.
-  /// 
   /// </summary>
   public string? ChordChart { get; init; }
 
@@ -151,8 +146,7 @@ public record Arrangement
   /// <summary>
   /// Possible Values:
   /// 
-  /// `10`, `11`, `12`, `13`, `14`, `15`, `16`, `18`, `20`, `22`, `24`, `26`, `28`, `32`, `36`, `42`, `48`
-  /// 
+  /// <c>10</c>, <c>11</c>, <c>12</c>, <c>13</c>, <c>14</c>, <c>15</c>, <c>16</c>, <c>18</c>, <c>20</c>, <c>22</c>, <c>24</c>, <c>26</c>, <c>28</c>, <c>32</c>, <c>36</c>, <c>42</c>, <c>48</c>
   /// </summary>
   public int? ChordChartFontSize { get; init; }
 
@@ -180,7 +174,6 @@ public record Arrangement
   /// An array of strings containing a label and a number describing the section:
   /// 
   /// ['Verse 1', 'Chorus 1', 'Verse 2']
-  /// 
   /// </summary>
   public IEnumerable<JsonElement>? Sequence { get; init; }
 

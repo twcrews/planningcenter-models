@@ -10,7 +10,7 @@ public record WorkflowStep
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -38,9 +38,9 @@ public record WorkflowStep
   public int? AutoSnoozeValue { get; init; }
 
   /// <summary>
-  /// Valid values are `day`, `week`, or `month`
+  /// Valid values are <c>day</c>, <c>week</c>, or <c>month</c>
   /// 
-  /// Possible values: `day`, `week`, or `month`
+  /// Possible values: <c>day</c>, <c>week</c>, or <c>month</c>
   /// </summary>
   public string? AutoSnoozeInterval { get; init; }
 

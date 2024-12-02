@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2022_07_07.Entities;
 
 /// <summary>
 /// A feed belonging to an organization.
-/// 
 /// </summary>
 public record Feed
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -19,12 +18,12 @@ public record Feed
   public bool? CanDelete { get; init; }
 
   /// <summary>
-  /// Possible values: `hidden` or `published`
+  /// Possible values: <c>hidden</c> or <c>published</c>
   /// </summary>
   public string? DefaultChurchCenterVisibility { get; init; }
 
   /// <summary>
-  /// Possible values: `registrations`, `groups`, `ical`, or `form`
+  /// Possible values: <c>registrations</c>, <c>groups</c>, <c>ical</c>, or <c>form</c>
   /// </summary>
   public string? FeedType { get; init; }
 

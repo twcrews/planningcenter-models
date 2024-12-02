@@ -5,24 +5,23 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2023_04_05.Entities;
 /// <summary>
 /// An attendance record for an event.
 /// 
-/// If someone was checked out, `checked_out_at` will be present.
+/// If someone was checked out, <c>checked_out_at</c> will be present.
 /// 
 /// You can scope check-ins in a few ways:
 /// 
-/// - `regular`s, `guest`s, and `volunteer`s correspond to the option selected when checking in.
-/// - `attendee`s are `regular`s and `guest`s together.
-/// - `one_time_guest`s are check-ins which were created without a corresponding person record.
-/// - `not_one_time_guest`s are check-ins which had a corresponding person record when they were created.
-/// - `checked_out` are check-ins where `checked_out_at` is present (meaning they were checked out from a station).
-/// - `first_time`s are check-ins which are the person's first for a given event. (Label-only visitors are not included here.)
-/// 
+/// - <c>regular</c>s, <c>guest</c>s, and <c>volunteer</c>s correspond to the option selected when checking in.
+/// - <c>attendee</c>s are <c>regular</c>s and <c>guest</c>s together.
+/// - <c>one_time_guest</c>s are check-ins which were created without a corresponding person record.
+/// - <c>not_one_time_guest</c>s are check-ins which had a corresponding person record when they were created.
+/// - <c>checked_out</c> are check-ins where <c>checked_out_at</c> is present (meaning they were checked out from a station).
+/// - <c>first_time</c>s are check-ins which are the person's first for a given event. (Label-only visitors are not included here.)
 /// </summary>
 public record CheckIn
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

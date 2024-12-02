@@ -10,12 +10,16 @@ public record Note
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Note { get; init; }
+  /// <remarks>
+  /// The true name of this attribute is <c>note</c>.
+  /// It has been changed here to avoid conflicts with the resource name.
+  /// </remarks>
+  public string? NoteAttribute { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

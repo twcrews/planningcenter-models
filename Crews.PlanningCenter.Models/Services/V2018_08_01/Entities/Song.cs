@@ -10,13 +10,12 @@ public record Song
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The name of the song.
   /// 
   /// When setting this value on a create you can pass a CCLI number and Services will fetch the song metadata for you.
-  /// 
   /// </summary>
   public string? Title { get; init; }
 

@@ -10,7 +10,7 @@ public record Episode
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -38,7 +38,7 @@ public record Episode
   public string? LibraryAudioUrl { get; init; }
 
   /// <summary>
-  /// Possible values: `vimeo`, `youtube`, `livestream_com`, `resi`, `facebook`, or `boxcast`
+  /// Possible values: <c>vimeo</c>, <c>youtube</c>, <c>livestream_com</c>, <c>resi</c>, <c>facebook</c>, or <c>boxcast</c>
   /// </summary>
   public string? LibraryStreamingService { get; init; }
 
@@ -83,12 +83,12 @@ public record Episode
   public JsonElement? SermonAudio { get; init; }
 
   /// <summary>
-  /// Possible values: `channel_default_livestream`, `livestream`, or `prerecorded`
+  /// Possible values: <c>channel_default_livestream</c>, <c>livestream</c>, or <c>prerecorded</c>
   /// </summary>
   public string? StreamType { get; init; }
 
   /// <summary>
-  /// Possible values: `vimeo`, `youtube`, `livestream_com`, `resi`, `facebook`, or `boxcast`
+  /// Possible values: <c>vimeo</c>, <c>youtube</c>, <c>livestream_com</c>, <c>resi</c>, <c>facebook</c>, or <c>boxcast</c>
   /// </summary>
   public string? StreamingService { get; init; }
 
@@ -115,14 +115,12 @@ public record Episode
   /// <summary>
   /// The id for the associated Services Plan
   /// (https://developer.planning.center/docs/#/apps/services/2018-08-01/vertices/plan)
-  /// 
   /// </summary>
   public string? ServicesPlanRemoteIdentifier { get; init; }
 
   /// <summary>
   /// The id for the associated Services Service Type
   /// (https://developer.planning.center/docs/#/apps/services/2018-08-01/vertices/service_type)
-  /// 
   /// </summary>
   public string? ServicesServiceTypeRemoteIdentifier { get; init; }
 

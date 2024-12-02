@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2024_09_03.Entities;
 
 /// <summary>
 /// Enables quick lookup of a person via barcode reader.
-/// 
 /// </summary>
 public record Pass
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -19,10 +18,9 @@ public record Pass
   public string? Code { get; init; }
 
   /// <summary>
-  /// Possible values: `barcode` or `pkpass`.
+  /// Possible values: <c>barcode</c> or <c>pkpass</c>.
   /// 
-  /// Using the `pkpass` value creates a mobile pass and sends an email to the associated person.
-  /// 
+  /// Using the <c>pkpass</c> value creates a mobile pass and sends an email to the associated person.
   /// </summary>
   public string? Kind { get; init; }
 

@@ -3,28 +3,27 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2018_08_01.Entities;
 
 /// <summary>
-/// A Planning Center `Person` record that has been added to Giving.
+/// A Planning Center <c>Person</c> record that has been added to Giving.
 /// 
-/// The `Person` object in Planning Center is so crucial that we have an entire product dedicated to managing, keeping track of, editing, and creating these records and metadata around them. For additional info, take a look at the [Planning Center People API Docs](https://developer.planning.center/docs/#/apps/people).
-/// 
+/// The <c>Person</c> object in Planning Center is so crucial that we have an entire product dedicated to managing, keeping track of, editing, and creating these records and metadata around them. For additional info, take a look at the <a href="https://developer.planning.center/docs/#/apps/people">Planning Center People API Docs</a>.
 /// </summary>
 public record Person
 {
   /// <summary>
   /// The unique identifier for a person.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// The level of Giving access granted to a person. For more info on permissions in Giving, please refer to our product documentation: https://pcogiving.zendesk.com/hc/en-us/articles/206541708-Permissions-in-Giving
   /// 
-  /// Possible values: `administrator`, `reviewer`, `counter`, or `bookkeeper`
+  /// Possible values: <c>administrator</c>, <c>reviewer</c>, <c>counter</c>, or <c>bookkeeper</c>
   /// </summary>
   public string? Permissions { get; init; }
 
   /// <summary>
   /// An array of email addresses for a person. Can be managed via People. Example:
-  /// ```
+  /// ``<c>
   /// [
   /// {
   /// "address": "support@planningcenter.com",
@@ -33,14 +32,13 @@ public record Person
   /// "primary": true
   /// }
   /// ]
-  /// ```
-  /// 
+  /// </c>``
   /// </summary>
   public IEnumerable<JsonElement>? EmailAddresses { get; init; }
 
   /// <summary>
   /// An array of addresses for a person. Can be managed via People. Example:
-  /// ```
+  /// ``<c>
   /// [
   /// {
   /// "street_line_1": "2790 Gateway Rd",
@@ -55,14 +53,13 @@ public record Person
   /// "line_2": "Carlsbad, CA 92009"
   /// }
   /// ]
-  /// ```
-  /// 
+  /// </c>``
   /// </summary>
   public IEnumerable<JsonElement>? Addresses { get; init; }
 
   /// <summary>
   /// An array of phone numbers for a person. Can be managed via People. Example:
-  /// ```
+  /// ``<c>
   /// [
   /// {
   /// "number": "(123) 456-7890",
@@ -71,8 +68,7 @@ public record Person
   /// "primary": true
   /// }
   /// ]
-  /// ```
-  /// 
+  /// </c>``
   /// </summary>
   public IEnumerable<JsonElement>? PhoneNumbers { get; init; }
 

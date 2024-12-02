@@ -10,7 +10,7 @@ public record Workflow
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -68,12 +68,12 @@ public record Workflow
   public string? WorkflowCategoryId { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public int? MyOverdueCardCount { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public int? MyDueSoonCardCount { get; init; }
 

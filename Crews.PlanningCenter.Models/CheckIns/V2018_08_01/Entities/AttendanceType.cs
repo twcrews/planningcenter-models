@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2018_08_01.Entities;
 
 /// <summary>
 /// A kind of attendee which is tracked by _headcount_, not by check-in.
-/// 
 /// </summary>
 public record AttendanceType
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

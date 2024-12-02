@@ -5,14 +5,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2018_08_01.Entities;
 /// <summary>
 /// A room or resource that can be requested for use as part of
 /// an event.
-/// 
 /// </summary>
 public record Resource
 {
   /// <summary>
   /// Unique identifier for the room or resource
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the room or resource was created
@@ -20,7 +19,7 @@ public record Resource
   public DateTime? CreatedAt { get; init; }
 
   /// <summary>
-  /// The type of resource, can either be `Room` or `Resource`
+  /// The type of resource, can either be <c>Room</c> or <c>Resource</c>
   /// </summary>
   public string? Kind { get; init; }
 

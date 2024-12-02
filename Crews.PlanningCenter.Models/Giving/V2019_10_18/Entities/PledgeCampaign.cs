@@ -3,15 +3,14 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 
 /// <summary>
-/// A `PledgeCampaign` is a way to request and track long-terms commitments to a particular goal or project.
-/// 
+/// A <c>PledgeCampaign</c> is a way to request and track long-terms commitments to a particular goal or project.
 /// </summary>
 public record PledgeCampaign
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

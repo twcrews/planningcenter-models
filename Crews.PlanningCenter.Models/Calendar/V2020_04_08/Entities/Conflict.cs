@@ -6,15 +6,14 @@ namespace Crews.PlanningCenter.Models.Calendar.V2020_04_08.Entities;
 /// A conflict between two events caused by overlapping event resource
 /// requests.
 /// 
-/// If the conflict has been resolved, `resolved_at` will be present.
-/// 
+/// If the conflict has been resolved, <c>resolved_at</c> will be present.
 /// </summary>
 public record Conflict
 {
   /// <summary>
   /// Unique identifier for the conflict
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the conflict was created

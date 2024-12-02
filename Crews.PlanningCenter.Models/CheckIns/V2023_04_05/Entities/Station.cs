@@ -6,17 +6,16 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2023_04_05.Entities;
 /// A device where people can be checked in.
 /// A device may also be connected to a printer
 /// and print labels for itself or other stations.
-/// 
 /// </summary>
 public record Station
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public bool? Online { get; init; }
 
@@ -36,12 +35,12 @@ public record Station
   public int? TimeoutSeconds { get; init; }
 
   /// <summary>
-  /// Possible values: `scanner` or `keypad`
+  /// Possible values: <c>scanner</c> or <c>keypad</c>
   /// </summary>
   public string? InputType { get; init; }
 
   /// <summary>
-  /// Possible values: `all_input_types`, `only_keypad`, or `only_scanner`
+  /// Possible values: <c>all_input_types</c>, <c>only_keypad</c>, or <c>only_scanner</c>
   /// </summary>
   public string? InputTypeOptions { get; init; }
 
@@ -56,22 +55,22 @@ public record Station
   public DateTime? UpdatedAt { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public DateTime? NextShowsAt { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public bool? OpenForCheckIn { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public DateTime? ClosesAt { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public int? CheckInCount { get; init; }
 

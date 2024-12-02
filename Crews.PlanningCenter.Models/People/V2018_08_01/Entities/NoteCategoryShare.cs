@@ -10,15 +10,15 @@ public record NoteCategoryShare
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// Possible values: `No Access`, `Viewer`, `Editor`, or `Manager`
+  /// Possible values: <c>No Access</c>, <c>Viewer</c>, <c>Editor</c>, or <c>Manager</c>
   /// </summary>
   public string? Group { get; init; }
 
   /// <summary>
-  /// Possible values: `view` or `view_create`
+  /// Possible values: <c>view</c> or <c>view_create</c>
   /// </summary>
   public string? Permission { get; init; }
 

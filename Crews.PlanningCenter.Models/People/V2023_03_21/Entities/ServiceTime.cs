@@ -10,7 +10,7 @@ public record ServiceTime
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -18,7 +18,7 @@ public record ServiceTime
   public int? StartTime { get; init; }
 
   /// <summary>
-  /// Possible values: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, or `saturday`
+  /// Possible values: <c>sunday</c>, <c>monday</c>, <c>tuesday</c>, <c>wednesday</c>, <c>thursday</c>, <c>friday</c>, or <c>saturday</c>
   /// </summary>
   public string? Day { get; init; }
 

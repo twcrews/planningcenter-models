@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2020_04_08.Entities;
 
 /// <summary>
 /// A specific booking of a room or resource for an event instance.
-/// 
 /// </summary>
 public record ResourceBooking
 {
   /// <summary>
   /// Unique identifier for the booking
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the booking was created

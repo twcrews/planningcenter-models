@@ -8,14 +8,13 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2024_09_03.Entities;
 /// Each recurrence is an _event period_ (which often corresponds to a week).
 /// 
 /// Event periods have _event times_ where people may actually check in.
-/// 
 /// </summary>
 public record Event
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -63,7 +62,7 @@ public record Event
   public bool? PreSelectEnabled { get; init; }
 
   /// <summary>
-  /// Only available when requested with the `?fields` param
+  /// Only available when requested with the <c>?fields</c> param
   /// </summary>
   public string? AppSource { get; init; }
 

@@ -5,15 +5,14 @@ namespace Crews.PlanningCenter.Models.Services.V2018_08_01.Entities;
 /// <summary>
 /// A Series can be specified for each plan to tie plans with similar messages together, even across Service Types.
 /// 
-/// *Note*: A series is not created until artwork is added from the plan.  You can use `series_title` included in `Plan` attributes to get titles for series without artwork.
-/// 
+/// *Note*: A series is not created until artwork is added from the plan.  You can use <c>series_title</c> included in <c>Plan</c> attributes to get titles for series without artwork.
 /// </summary>
 public record Series
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

@@ -3,14 +3,14 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.People.V2022_07_14.Entities;
 
 /// <summary>
-/// The ready and snoozed count for an assignee & step
+/// The ready and snoozed count for an assignee &amp; step
 /// </summary>
 public record WorkflowStepAssigneeSummary
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

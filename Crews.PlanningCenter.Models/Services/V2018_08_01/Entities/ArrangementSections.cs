@@ -10,22 +10,22 @@ public record ArrangementSections
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// Given an arrangement with the folowing `chord_chart`:
+  /// Given an arrangement with the folowing <c>chord_chart</c>:
   /// 
-  /// ```
+  /// ``<c>
   /// VERSE 1
   /// D          Bm       G          D
   /// Be thou my vision O Lord of my heart
   /// A             Bm         G              A
   /// naught be all else to me save that Thou art
-  /// ```
+  /// </c>`<c>
   /// 
   /// The value will be:
   /// 
-  /// ```json
+  /// </c>`<c>json
   /// [
   /// {
   /// "label": "Verse",
@@ -34,8 +34,7 @@ public record ArrangementSections
   /// "breaks_at": null
   /// }
   /// ]
-  /// ```
-  /// 
+  /// </c>``
   /// </summary>
   public IEnumerable<JsonElement>? Sections { get; init; }
 

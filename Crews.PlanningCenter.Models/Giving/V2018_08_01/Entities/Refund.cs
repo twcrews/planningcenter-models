@@ -3,23 +3,22 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Giving.V2018_08_01.Entities;
 
 /// <summary>
-/// A `Refund` record holds information pertaining to a refunded `Donation`.
-/// 
+/// A <c>Refund</c> record holds information pertaining to a refunded <c>Donation</c>.
 /// </summary>
 public record Refund
 {
   /// <summary>
   /// The unique identifier for a refund.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// The date and time at which a refund was created. Example: `2000-01-01T12:00:00Z`
+  /// The date and time at which a refund was created. Example: <c>2000-01-01T12:00:00Z</c>
   /// </summary>
   public DateTime? CreatedAt { get; init; }
 
   /// <summary>
-  /// The date and time at which a refund was last updated. Example: `2000-01-01T12:00:00Z`
+  /// The date and time at which a refund was last updated. Example: <c>2000-01-01T12:00:00Z</c>
   /// </summary>
   public DateTime? UpdatedAt { get; init; }
 
@@ -29,7 +28,7 @@ public record Refund
   public int? AmountCents { get; init; }
 
   /// <summary>
-  /// The currency of `amount_cents`.
+  /// The currency of <c>amount_cents</c>.
   /// </summary>
   public string? AmountCurrency { get; init; }
 
@@ -39,12 +38,12 @@ public record Refund
   public int? FeeCents { get; init; }
 
   /// <summary>
-  /// The date and time at which a refund was processed. Example: `2000-01-01T12:00:00Z`
+  /// The date and time at which a refund was processed. Example: <c>2000-01-01T12:00:00Z</c>
   /// </summary>
   public DateTime? RefundedAt { get; init; }
 
   /// <summary>
-  /// The currency of `fee_cents`.
+  /// The currency of <c>fee_cents</c>.
   /// </summary>
   public string? FeeCurrency { get; init; }
 

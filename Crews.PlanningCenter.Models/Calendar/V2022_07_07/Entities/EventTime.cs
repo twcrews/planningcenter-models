@@ -7,14 +7,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2022_07_07.Entities;
 /// 
 /// In the Calendar UI, these are represented under the "Schedule" section and
 /// may include "Setup" and "Teardown" times for the instance.
-/// 
 /// </summary>
 public record EventTime
 {
   /// <summary>
   /// Unique identifier for the event time
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the event time ends
@@ -32,12 +31,12 @@ public record EventTime
   public DateTime? Name { get; init; }
 
   /// <summary>
-  /// Set to `true` if the time is visible on kiosk
+  /// Set to <c>true</c> if the time is visible on kiosk
   /// </summary>
   public bool? VisibleOnKiosks { get; init; }
 
   /// <summary>
-  /// Set to `true` if the time is visible on widget or iCal
+  /// Set to <c>true</c> if the time is visible on widget or iCal
   /// </summary>
   public bool? VisibleOnWidgetAndIcal { get; init; }
 

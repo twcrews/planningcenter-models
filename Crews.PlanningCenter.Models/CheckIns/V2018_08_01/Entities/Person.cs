@@ -5,18 +5,16 @@ namespace Crews.PlanningCenter.Models.CheckIns.V2018_08_01.Entities;
 /// <summary>
 /// An attendee, volunteer or administrator.
 /// 
-/// _Usually_, a person who checked in will be present as a `Person`. In some cases, they may not be present:
+/// _Usually_, a person who checked in will be present as a <c>Person</c>. In some cases, they may not be present:
 /// - The person was manually deleted from the admin interface
 /// - The check-in was created as a "Visitor - Label Only" (which doesn't create a corresponding person record)
-/// 
-/// 
 /// </summary>
 public record Person
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

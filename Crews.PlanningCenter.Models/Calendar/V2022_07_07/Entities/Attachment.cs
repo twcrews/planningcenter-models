@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2022_07_07.Entities;
 
 /// <summary>
 /// An uploaded file attached to an event.
-/// 
 /// </summary>
 public record Attachment
 {
   /// <summary>
   /// Unique identifier for the attachment
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// MIME type of the attachment

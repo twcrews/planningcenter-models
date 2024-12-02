@@ -3,14 +3,14 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.Services.V2018_11_01.Entities;
 
 /// <summary>
-/// Returned from the `open` attachment action.
+/// Returned from the <c>open</c> attachment action.
 /// </summary>
 public record AttachmentActivity
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

@@ -4,14 +4,13 @@ namespace Crews.PlanningCenter.Models.Calendar.V2018_08_01.Entities;
 
 /// <summary>
 /// A resource and quantity suggested by a room setup.
-/// 
 /// </summary>
 public record ResourceSuggestion
 {
   /// <summary>
   /// Unique identifier for the suggestion
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
   /// UTC time at which the suggestion was created

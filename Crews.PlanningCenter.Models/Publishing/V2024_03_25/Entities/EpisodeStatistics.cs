@@ -10,10 +10,10 @@ public record EpisodeStatistics
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  public string? Id { get; init; }
+  public string? ID { get; init; }
 
   /// <summary>
-  /// `watch_count` per EpisodeTime
+  /// <c>watch_count</c> per EpisodeTime
   /// </summary>
   public IEnumerable<JsonElement>? Times { get; init; }
 
