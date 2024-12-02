@@ -1,5 +1,3 @@
-using System.Text.Json;
-
 namespace Crews.PlanningCenter.Models.CheckIns.V2023_04_05.Entities;
 
 /// <summary>

@@ -1,5 +1,3 @@
-using System.Text.Json;
-
 namespace Crews.PlanningCenter.Models.Calendar.V2020_04_08.Entities;
 
 /// <summary>

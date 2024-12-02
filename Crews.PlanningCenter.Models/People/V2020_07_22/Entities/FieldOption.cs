@@ -1,5 +1,3 @@
-using System.Text.Json;
-
 namespace Crews.PlanningCenter.Models.People.V2020_07_22.Entities;
 
 /// <summary>
