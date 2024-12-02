@@ -36,9 +36,22 @@ public record <#=resource.Name#>
 <#
       foreach (PlanningCenterResourceAttributeInfo attribute in Task.Run(() => service.GetAttributesInfoAsync(product, version, resource.ID)).Result)
       {
+        string attributeName = attribute.Name.ToPascalCase();
+        string description = attribute.Description.ToXmlDocSummary(indentSpaces: 2);
+
+        if (string.Equals(attributeName, "Id", StringComparison.OrdinalIgnoreCase))
+        {
+          attributeName = "ID";
+        }
+
+        if (string.Equals(attributeName, resource.Name, StringComparison.OrdinalIgnoreCase))
+        {
+          attributeName = $"{attributeName}Attribute";
+          description += $"\n  /// <remarks>\n  /// The true name of this attribute is <c>{attribute.Name}</c>.\n  /// It has been changed here to avoid conflicts with the resource name.\n  /// </remarks>";
+        }
 #>
-<#=attribute.Description.ToXmlDocSummary(indentSpaces: 2)#>
-  public <#=attribute.ClrTypeName#>? <#=attribute.Name.ToPascalCase()#> { get; init; }
+<#=description#>
+  public <#=attribute.ClrTypeName#>? <#=attributeName.ToPascalCase()#> { get; init; }
 
 <#
       }
