@@ -25,11 +25,16 @@
     {
       foreach (PlanningCenterResourceInfo resource in Task.Run(() => service.GetResourcesInfoAsync(product, version)).Result)
       {
+        IEnumerable<PlanningCenterResourceAttributeInfo> includables = Task.Run(() => service.GetIncludablesInfoAsync(product, version, resource.ID)).Result;
+        IEnumerable<PlanningCenterResourceAttributeInfo> orderables = Task.Run(() => service.GetOrderablesInfoAsync(product, version, resource.ID)).Result;
+        IEnumerable<PlanningCenterResourceAttributeInfo> queryables = Task.Run(() => service.GetQueryablesInfoAsync(product, version, resource.ID)).Result;
+        IEnumerable<string> filterables = Task.Run(() => service.GetFilterableAttributesAsync(product, version, resource.ID)).Result;
+
+        if (!includables.Any() && !orderables.Any() && !queryables.Any() && !filterables.Any()) continue;
 #>
 namespace Crews.PlanningCenter.Models.<#=product.ToPascalCase()#>.V<#=version.ToSnakeCase()#>.Parameters;
 
 <#
-        IEnumerable<PlanningCenterResourceAttributeInfo> includables = Task.Run(() => service.GetIncludablesInfoAsync(product, version, resource.ID)).Result;
         if (includables.Any())
         {
 #>
@@ -51,7 +56,6 @@ public enum <#=resource.Name#>Includable
 <#
         }
 
-        IEnumerable<PlanningCenterResourceAttributeInfo> orderables = Task.Run(() => service.GetOrderablesInfoAsync(product, version, resource.ID)).Result;
         if (orderables.Any())
         {
 #>
@@ -73,7 +77,6 @@ public enum <#=resource.Name#>Orderable
 <#
         }
         
-        IEnumerable<PlanningCenterResourceAttributeInfo> queryables = Task.Run(() => service.GetQueryablesInfoAsync(product, version, resource.ID)).Result;
         if (queryables.Any())
         {
 #>
@@ -95,7 +98,6 @@ public enum <#=resource.Name#>Queryable
 <#
         }
         
-        IEnumerable<string> filterables = Task.Run(() => service.GetFilterableAttributesAsync(product, version, resource.ID)).Result;
         if (filterables.Any())
         {
 #>
