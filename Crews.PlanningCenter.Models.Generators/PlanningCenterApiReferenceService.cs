@@ -9,7 +9,7 @@ public class PlanningCenterApiReferenceService
 	private readonly HttpClient _client;
 
 	private static JsonException NullJsonElementException => new("Unexpected null value in JSON element");
-	private static JsonException BadJsonHierarchyException 
+	private static JsonException BadJsonHierarchyException
 		=> new("The JSON string is properly formatted, but has an unexpected hierarchy");
 
 	public class Options
@@ -77,7 +77,7 @@ public class PlanningCenterApiReferenceService
 					e.TryGetProperty("id", out JsonElement idElement))
 				{
 					JsonElement descriptionElement = vertexAttributesElement.GetProperty("description");
-					string description = descriptionElement.GetString() ?? 
+					string description = descriptionElement.GetString() ??
 						"Planning Center does not provide a description for this resource.";
 
 					return new PlanningCenterResourceInfo
@@ -112,7 +112,7 @@ public class PlanningCenterApiReferenceService
 					typeAnnotation.TryGetProperty("name", out JsonElement typeNameElement))
 				{
 					JsonElement descriptionElement = elementAttributes.GetProperty("description");
-					string description = descriptionElement.GetString() ?? 
+					string description = descriptionElement.GetString() ??
 						"Planning Center does not provide a description for this attribute.";
 
 					return new PlanningCenterResourceAttributeInfo
@@ -129,11 +129,106 @@ public class PlanningCenterApiReferenceService
 		throw BadJsonHierarchyException;
 	}
 
+	public Task<IEnumerable<PlanningCenterResourceAttributeInfo>> GetIncludablesInfoAsync(
+		string product, string version, string resource)
+		=> GetParametersInfoAsync(product, version, resource, "can_include");
+
+	public Task<IEnumerable<PlanningCenterResourceAttributeInfo>> GetOrderablesInfoAsync(
+		string product, string version, string resource)
+		=> GetParametersInfoAsync(product, version, resource, "can_order");
+
+	public Task<IEnumerable<PlanningCenterResourceAttributeInfo>> GetQueryablesInfoAsync(
+		string product, string version, string resource)
+		=> GetParametersInfoAsync(product, version, resource, "can_query");
+
+	public async Task<IEnumerable<string>> GetFilterableAttributesAsync(
+		string product, string version, string resource)
+	{
+		JsonDocument document = await GetResourceDocumentAsync(product, version, resource);
+
+		if (document.RootElement.TryGetProperty("data", out JsonElement data) &&
+			data.TryGetProperty("relationships", out JsonElement relationships) &&
+			relationships.TryGetProperty("inbound_edges", out JsonElement inboundEdgesElement) &&
+			inboundEdgesElement.TryGetProperty("data", out JsonElement inboundEdgesDataElement))
+		{
+			List<JsonElement> filterableAttributesElements = [.. inboundEdgesDataElement.EnumerateArray()];
+
+			JsonElement filterableAttributesElement = filterableAttributesElements
+				.SingleOrDefault(e =>
+				{
+					if (e.TryGetProperty("id", out JsonElement filterableAttributeIdElement))
+					{
+						return filterableAttributeIdElement.GetString()?.Contains("organization") ?? false;
+					}
+					throw BadJsonHierarchyException;
+				});
+			if (filterableAttributesElement.Equals(default(JsonElement))) return [];
+
+			if (filterableAttributesElement.TryGetProperty("attributes", out JsonElement innerAttributesElement) &&
+				innerAttributesElement.TryGetProperty("filters", out JsonElement filtersElement))
+			{
+				IEnumerable<JsonElement> filtersChildElements = filtersElement.EnumerateArray();
+				return filtersChildElements.Select(e => e.GetString() ?? throw NullJsonElementException);
+			}
+			throw BadJsonHierarchyException;
+		}
+		throw BadJsonHierarchyException;
+	}
+
+	private async Task<IEnumerable<PlanningCenterResourceAttributeInfo>> GetParametersInfoAsync(
+		string product, string version, string resource, string parameterId)
+	{
+		IEnumerable<JsonElement> parameterAttributesElements = await
+			GetParameterAttributesElementsAsync(product, version, resource, parameterId);
+		return parameterAttributesElements.Select(e =>
+		{
+			if (e.TryGetProperty("name", out JsonElement valueElement) &&
+				e.TryGetProperty("type", out JsonElement typeElement))
+			{
+				JsonElement descriptionElement = e.GetProperty("description");
+				string description = descriptionElement.GetString() ??
+					"Planning Center does not provide a description for this parameter.";
+
+				return new PlanningCenterResourceAttributeInfo
+				{
+					Name = valueElement.GetString() ?? throw NullJsonElementException,
+					Description = description,
+					Type = typeElement.GetString() ?? throw NullJsonElementException,
+					ClrTypeName = GetClrTypeName(typeElement.GetString() ?? throw NullJsonElementException)
+				};
+			}
+			throw BadJsonHierarchyException;
+		});
+	}
+
 	private async Task<JsonDocument> GetResourceDocumentAsync(string product, string version, string resource)
 	{
 		HttpResponseMessage response = await _client.GetAsync($"{product}/v2/documentation/{version}/vertices/{resource}");
 		await using Stream content = await response.Content.ReadAsStreamAsync();
 		return await JsonDocument.ParseAsync(content);
+	}
+
+	private async Task<IEnumerable<JsonElement>> GetParameterAttributesElementsAsync(
+		string product, string version, string resource, string parameterId)
+	{
+		JsonDocument document = await GetResourceDocumentAsync(product, version, resource);
+
+		if (document.RootElement.TryGetProperty("data", out JsonElement data) &&
+			data.TryGetProperty("relationships", out JsonElement relationships) &&
+			relationships.TryGetProperty(parameterId, out JsonElement parametersElement) &&
+			parametersElement.TryGetProperty("data", out JsonElement parametersDataElement))
+		{
+			List<JsonElement> parameterElements = [.. parametersDataElement.EnumerateArray()];
+			return parameterElements.Select(e =>
+			{
+				if (e.TryGetProperty("attributes", out JsonElement elementAttributes))
+				{
+					return elementAttributes;
+				}
+				throw BadJsonHierarchyException;
+			});
+		}
+		throw BadJsonHierarchyException;
 	}
 
 	private static string GetClrTypeName(string typeName) => typeName switch
