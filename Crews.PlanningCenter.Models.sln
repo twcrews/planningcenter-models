@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crews.PlanningCenter.Models", "Crews.PlanningCenter.Models\Crews.PlanningCenter.Models.csproj", "{4AD1D5DA-2E44-402D-89B1-D21AA63B709F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crews.PlanningCenter.Models.Generators", "Crews.PlanningCenter.Models.Generators\Crews.PlanningCenter.Models.Generators.csproj", "{CD99F700-8FD7-4919-B88C-3C1520E5B726}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{4AD1D5DA-2E44-402D-89B1-D21AA63B709F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD1D5DA-2E44-402D-89B1-D21AA63B709F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD1D5DA-2E44-402D-89B1-D21AA63B709F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD99F700-8FD7-4919-B88C-3C1520E5B726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD99F700-8FD7-4919-B88C-3C1520E5B726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD99F700-8FD7-4919-B88C-3C1520E5B726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD99F700-8FD7-4919-B88C-3C1520E5B726}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
