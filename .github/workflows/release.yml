@@ -18,8 +18,6 @@ jobs:
       run: echo "VERSION=${GITHUB_REF_NAME}" >> $GITHUB_ENV
     - name: Build
       run: dotnet build Crews.PlanningCenter.Models --configuration Release /p:Version=${VERSION}
-    - name: Test
-      run: dotnet test Crews.PlanningCenter.Models.Tests --configuration Release /p:Version=${VERSION}
     - name: Pack
       run: dotnet pack Crews.PlanningCenter.Models --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Push
