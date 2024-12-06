@@ -8,6 +8,7 @@ public enum PersonAppIncludable
   /// <summary>
   /// include associated app
   /// </summary>
+  [JsonApiName("app")]
   App,
 
 }

@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 
 /// <summary>
@@ -16,51 +18,61 @@ namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 /// 
 /// Whichever route you decide to take, it's helpful to make use of the <c>Batch</c>'s description to help differentiate these groupings from each other and from other <c>Batch</c>es that the Giving admins might be creating on their own.
 /// </summary>
+[JsonApiName("batch")]
 public record Batch
 {
   /// <summary>
   /// The unique identifier for a batch. For batches and batch groups, these identifiers are unique not across all of Planning Center, but only per organization. As such, it is possible to see the same batch <c>id</c> in multiple organizations.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
   /// <summary>
   /// The date and time at which a batch was created. Example: <c>2000-01-01T12:00:00Z</c>
   /// </summary>
+  [JsonApiName("created_at")]
   public DateTime? CreatedAt { get; init; }
 
   /// <summary>
   /// The date and time at which a batch was last updated. Example: <c>2000-01-01T12:00:00Z</c>
   /// </summary>
+  [JsonApiName("updated_at")]
   public DateTime? UpdatedAt { get; init; }
 
   /// <summary>
   /// The date and time that a batch was committed at. If it's <c>null</c>, the batch is still in progress or updating. Example: <c>2000-01-01T12:00:00Z</c>
   /// </summary>
+  [JsonApiName("committed_at")]
   public DateTime? CommittedAt { get; init; }
 
   /// <summary>
   /// A brief description of what a batch is for. This is displayed in Giving to help differentiate different batches from one another. If no description is provided for a batch, it will be referred to as <c>Untitled batch</c> within Giving.
   /// </summary>
+  [JsonApiName("description")]
   public string? Description { get; init; }
 
   /// <summary>
   /// Only available when requested with the <c>?fields</c> param
   /// </summary>
+  [JsonApiName("donations_count")]
   public int? DonationsCount { get; init; }
 
   /// <summary>
   /// The gross total of cents donated within the batch.
   /// </summary>
+  [JsonApiName("total_cents")]
   public int? TotalCents { get; init; }
 
   /// <summary>
   /// The currency used to calculate <c>total_cents</c>.
   /// </summary>
+  [JsonApiName("total_currency")]
   public string? TotalCurrency { get; init; }
 
   /// <summary>
   /// One of <c>in_progress</c>, <c>updating</c>, or <c>committed</c>. The <c>updating</c> state is temporary and describes a Batch that is currently being changed in some way (e.g. moving from <c>in_progress</c> to <c>committed</c>). Certain changes to Batches in this state (or their Donations) will be restricted until the Batch has finished updating.
   /// </summary>
+  [JsonApiName("status")]
   public string? Status { get; init; }
 
 }

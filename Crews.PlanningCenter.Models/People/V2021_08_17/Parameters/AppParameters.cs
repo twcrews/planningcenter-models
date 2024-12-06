@@ -8,11 +8,13 @@ public enum AppOrderable
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
   /// <summary>
   /// prefix with a hyphen (-url) to reverse the order
   /// </summary>
+  [JsonApiName("url")]
   Url,
 
 }
@@ -25,11 +27,13 @@ public enum AppQueryable
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
   /// <summary>
   /// Query on a specific url
   /// </summary>
+  [JsonApiName("url")]
   Url,
 
 }

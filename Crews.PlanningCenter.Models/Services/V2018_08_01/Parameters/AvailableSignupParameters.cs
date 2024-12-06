@@ -8,6 +8,7 @@ public enum AvailableSignupIncludable
   /// <summary>
   /// include associated signup_sheets
   /// </summary>
+  [JsonApiName("signup_sheets")]
   SignupSheets,
 
 }

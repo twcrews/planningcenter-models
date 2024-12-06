@@ -8,6 +8,7 @@ public enum ResourceSuggestionIncludable
   /// <summary>
   /// include associated resource
   /// </summary>
+  [JsonApiName("resource")]
   Resource,
 
 }

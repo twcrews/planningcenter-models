@@ -8,6 +8,7 @@ public enum ItemNoteIncludable
   /// <summary>
   /// include associated item_note_category
   /// </summary>
+  [JsonApiName("item_note_category")]
   ItemNoteCategory,
 
 }

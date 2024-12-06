@@ -8,6 +8,7 @@ public enum LocationIncludable
   /// <summary>
   /// include associated group
   /// </summary>
+  [JsonApiName("group")]
   Group,
 
 }

@@ -8,11 +8,13 @@ public enum SignupSheetIncludable
   /// <summary>
   /// include associated scheduled_people
   /// </summary>
+  [JsonApiName("scheduled_people")]
   ScheduledPeople,
 
   /// <summary>
   /// include associated signup_sheet_metadata
   /// </summary>
+  [JsonApiName("signup_sheet_metadata")]
   SignupSheetMetadata,
 
 }

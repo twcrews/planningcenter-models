@@ -8,6 +8,7 @@ public enum NoteCategoryShareIncludable
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }
@@ -22,6 +23,7 @@ public enum NoteCategoryShareQueryable
   /// 
   /// Possible values: <c>view</c> or <c>view_create</c>
   /// </summary>
+  [JsonApiName("permission")]
   Permission,
 
 }

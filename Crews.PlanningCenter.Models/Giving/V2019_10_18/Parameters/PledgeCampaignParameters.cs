@@ -8,6 +8,7 @@ public enum PledgeCampaignIncludable
   /// <summary>
   /// include associated fund
   /// </summary>
+  [JsonApiName("fund")]
   Fund,
 
 }
@@ -20,11 +21,13 @@ public enum PledgeCampaignOrderable
   /// <summary>
   /// prefix with a hyphen (-ends_at) to reverse the order
   /// </summary>
+  [JsonApiName("ends_at")]
   EndsAt,
 
   /// <summary>
   /// prefix with a hyphen (-starts_at) to reverse the order
   /// </summary>
+  [JsonApiName("starts_at")]
   StartsAt,
 
 }
@@ -37,11 +40,13 @@ public enum PledgeCampaignQueryable
   /// <summary>
   /// query on a specific ends_at
   /// </summary>
+  [JsonApiName("ends_at")]
   EndsAt,
 
   /// <summary>
   /// query on a specific starts_at
   /// </summary>
+  [JsonApiName("starts_at")]
   StartsAt,
 
 }

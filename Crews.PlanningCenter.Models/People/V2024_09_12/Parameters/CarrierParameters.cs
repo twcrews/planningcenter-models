@@ -8,11 +8,13 @@ public enum CarrierOrderable
   /// <summary>
   /// prefix with a hyphen (-international) to reverse the order
   /// </summary>
+  [JsonApiName("international")]
   International,
 
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }

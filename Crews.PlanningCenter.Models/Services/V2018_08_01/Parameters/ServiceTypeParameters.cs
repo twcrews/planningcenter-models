@@ -8,6 +8,7 @@ public enum ServiceTypeIncludable
   /// <summary>
   /// include associated time_preference_options
   /// </summary>
+  [JsonApiName("time_preference_options")]
   TimePreferenceOptions,
 
 }
@@ -20,11 +21,13 @@ public enum ServiceTypeOrderable
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
   /// <summary>
   /// prefix with a hyphen (-sequence) to reverse the order
   /// </summary>
+  [JsonApiName("sequence")]
   Sequence,
 
 }
@@ -37,11 +40,13 @@ public enum ServiceTypeQueryable
   /// <summary>
   /// Query on a specific id
   /// </summary>
+  [JsonApiName("id")]
   Id,
 
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }
@@ -54,6 +59,7 @@ public enum ServiceTypeFilterable
   /// <summary>
   /// Filter by no_parent.
   /// </summary>
+  [JsonApiName("no_parent")]
   NoParent,
 
 }

@@ -8,11 +8,13 @@ public enum TagGroupIncludable
   /// <summary>
   /// include associated folder
   /// </summary>
+  [JsonApiName("folder")]
   Folder,
 
   /// <summary>
   /// include associated tags
   /// </summary>
+  [JsonApiName("tags")]
   Tags,
 
 }
@@ -25,11 +27,13 @@ public enum TagGroupQueryable
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
   /// <summary>
   /// Query on a specific tags_for
   /// </summary>
+  [JsonApiName("tags_for")]
   TagsFor,
 
 }
@@ -42,21 +46,25 @@ public enum TagGroupFilterable
   /// <summary>
   /// Filter by arrangement.
   /// </summary>
+  [JsonApiName("arrangement")]
   Arrangement,
 
   /// <summary>
   /// Filter by media.
   /// </summary>
+  [JsonApiName("media")]
   Media,
 
   /// <summary>
   /// Filter by person.
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
   /// <summary>
   /// Filter by song.
   /// </summary>
+  [JsonApiName("song")]
   Song,
 
 }

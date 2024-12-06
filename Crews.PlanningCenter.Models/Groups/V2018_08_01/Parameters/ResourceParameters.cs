@@ -8,11 +8,13 @@ public enum ResourceOrderable
   /// <summary>
   /// prefix with a hyphen (-last_updated) to reverse the order
   /// </summary>
+  [JsonApiName("last_updated")]
   LastUpdated,
 
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }

@@ -8,11 +8,13 @@ public enum ArrangementIncludable
   /// <summary>
   /// include associated keys
   /// </summary>
+  [JsonApiName("keys")]
   Keys,
 
   /// <summary>
   /// include associated sections
   /// </summary>
+  [JsonApiName("sections")]
   Sections,
 
 }

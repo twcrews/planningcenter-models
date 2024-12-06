@@ -8,11 +8,13 @@ public enum LocationEventPeriodIncludable
   /// <summary>
   /// include associated event_period
   /// </summary>
+  [JsonApiName("event_period")]
   EventPeriod,
 
   /// <summary>
   /// include associated location
   /// </summary>
+  [JsonApiName("location")]
   Location,
 
 }

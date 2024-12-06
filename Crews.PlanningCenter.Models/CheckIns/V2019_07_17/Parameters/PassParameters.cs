@@ -8,6 +8,7 @@ public enum PassIncludable
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }
@@ -20,6 +21,7 @@ public enum PassQueryable
   /// <summary>
   /// Query on a specific code
   /// </summary>
+  [JsonApiName("code")]
   Code,
 
 }

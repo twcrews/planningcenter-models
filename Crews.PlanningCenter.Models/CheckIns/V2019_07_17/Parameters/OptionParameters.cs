@@ -8,6 +8,7 @@ public enum OptionIncludable
   /// <summary>
   /// include associated label
   /// </summary>
+  [JsonApiName("label")]
   Label,
 
 }

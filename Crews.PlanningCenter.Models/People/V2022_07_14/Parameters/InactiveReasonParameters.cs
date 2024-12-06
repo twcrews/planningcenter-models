@@ -8,6 +8,7 @@ public enum InactiveReasonOrderable
   /// <summary>
   /// prefix with a hyphen (-value) to reverse the order
   /// </summary>
+  [JsonApiName("value")]
   Value,
 
 }
@@ -20,6 +21,7 @@ public enum InactiveReasonQueryable
   /// <summary>
   /// Query on a specific value
   /// </summary>
+  [JsonApiName("value")]
   Value,
 
 }

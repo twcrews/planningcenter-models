@@ -8,11 +8,13 @@ public enum PeopleImportHistoryIncludable
   /// <summary>
   /// include associated household
   /// </summary>
+  [JsonApiName("household")]
   Household,
 
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }
@@ -25,6 +27,7 @@ public enum PeopleImportHistoryQueryable
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }

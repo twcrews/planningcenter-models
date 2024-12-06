@@ -8,6 +8,7 @@ public enum PersonMergerOrderable
   /// <summary>
   /// prefix with a hyphen (-created_at) to reverse the order
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
 }
@@ -20,16 +21,19 @@ public enum PersonMergerQueryable
   /// <summary>
   /// Query on a specific created_at
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// Query on a specific person_to_keep_id
   /// </summary>
+  [JsonApiName("person_to_keep_id")]
   PersonToKeepId,
 
   /// <summary>
   /// Query on a specific person_to_remove_id
   /// </summary>
+  [JsonApiName("person_to_remove_id")]
   PersonToRemoveId,
 
 }

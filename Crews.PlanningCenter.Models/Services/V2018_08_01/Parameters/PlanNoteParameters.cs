@@ -8,6 +8,7 @@ public enum PlanNoteIncludable
   /// <summary>
   /// include associated plan_note_category
   /// </summary>
+  [JsonApiName("plan_note_category")]
   PlanNoteCategory,
 
 }
@@ -20,11 +21,13 @@ public enum PlanNoteOrderable
   /// <summary>
   /// prefix with a hyphen (-created_at) to reverse the order
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// prefix with a hyphen (-updated_at) to reverse the order
   /// </summary>
+  [JsonApiName("updated_at")]
   UpdatedAt,
 
 }
@@ -37,11 +40,13 @@ public enum PlanNoteQueryable
   /// <summary>
   /// Query on a specific created_at
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// Query on a specific updated_at
   /// </summary>
+  [JsonApiName("updated_at")]
   UpdatedAt,
 
 }

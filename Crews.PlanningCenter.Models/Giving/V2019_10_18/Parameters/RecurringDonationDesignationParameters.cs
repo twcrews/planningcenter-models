@@ -8,6 +8,7 @@ public enum RecurringDonationDesignationIncludable
   /// <summary>
   /// include associated fund
   /// </summary>
+  [JsonApiName("fund")]
   Fund,
 
 }

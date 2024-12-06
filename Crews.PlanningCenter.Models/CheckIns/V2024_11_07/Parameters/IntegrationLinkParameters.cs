@@ -8,6 +8,7 @@ public enum IntegrationLinkQueryable
   /// <summary>
   /// Query on a specific remote_gid
   /// </summary>
+  [JsonApiName("remote_gid")]
   RemoteGid,
 
 }

@@ -8,6 +8,7 @@ public enum RuleIncludable
   /// <summary>
   /// include associated conditions
   /// </summary>
+  [JsonApiName("conditions")]
   Conditions,
 
 }
@@ -20,16 +21,19 @@ public enum RuleOrderable
   /// <summary>
   /// prefix with a hyphen (-created_at) to reverse the order
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// prefix with a hyphen (-subset) to reverse the order
   /// </summary>
+  [JsonApiName("subset")]
   Subset,
 
   /// <summary>
   /// prefix with a hyphen (-updated_at) to reverse the order
   /// </summary>
+  [JsonApiName("updated_at")]
   UpdatedAt,
 
 }
@@ -42,16 +46,19 @@ public enum RuleQueryable
   /// <summary>
   /// Query on a specific created_at
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// Query on a specific subset
   /// </summary>
+  [JsonApiName("subset")]
   Subset,
 
   /// <summary>
   /// Query on a specific updated_at
   /// </summary>
+  [JsonApiName("updated_at")]
   UpdatedAt,
 
 }

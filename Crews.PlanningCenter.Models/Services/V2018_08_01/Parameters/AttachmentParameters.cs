@@ -8,6 +8,7 @@ public enum AttachmentIncludable
   /// <summary>
   /// include associated zooms
   /// </summary>
+  [JsonApiName("zooms")]
   Zooms,
 
 }
@@ -20,26 +21,31 @@ public enum AttachmentOrderable
   /// <summary>
   /// prefix with a hyphen (-attachable_type) to reverse the order
   /// </summary>
+  [JsonApiName("attachable_type")]
   AttachableType,
 
   /// <summary>
   /// prefix with a hyphen (-created_at) to reverse the order
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// prefix with a hyphen (-filename) to reverse the order
   /// </summary>
+  [JsonApiName("filename")]
   Filename,
 
   /// <summary>
   /// prefix with a hyphen (-filetype) to reverse the order
   /// </summary>
+  [JsonApiName("filetype")]
   Filetype,
 
   /// <summary>
   /// prefix with a hyphen (-size) to reverse the order
   /// </summary>
+  [JsonApiName("size")]
   Size,
 
 }
@@ -52,6 +58,7 @@ public enum AttachmentQueryable
   /// <summary>
   /// Query on a specific licenses_purchased
   /// </summary>
+  [JsonApiName("licenses_purchased")]
   LicensesPurchased,
 
 }

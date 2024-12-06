@@ -8,6 +8,7 @@ public enum WorkflowShareIncludable
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }
@@ -22,6 +23,7 @@ public enum WorkflowShareQueryable
   /// 
   /// Possible values: <c>view</c>, <c>manage_cards</c>, or <c>manage</c>
   /// </summary>
+  [JsonApiName("permission")]
   Permission,
 
 }

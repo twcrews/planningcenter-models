@@ -8,6 +8,7 @@ public enum SpeakerOrderable
   /// <summary>
   /// prefix with a hyphen (-first_name) to reverse the order
   /// </summary>
+  [JsonApiName("first_name")]
   FirstName,
 
 }

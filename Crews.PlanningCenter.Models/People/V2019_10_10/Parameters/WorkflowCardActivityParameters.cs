@@ -8,6 +8,7 @@ public enum WorkflowCardActivityOrderable
   /// <summary>
   /// prefix with a hyphen (-id) to reverse the order
   /// </summary>
+  [JsonApiName("id")]
   Id,
 
 }

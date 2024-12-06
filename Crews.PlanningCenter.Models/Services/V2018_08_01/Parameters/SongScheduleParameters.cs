@@ -8,6 +8,7 @@ public enum SongScheduleOrderable
   /// <summary>
   /// prefix with a hyphen (-plan_sort_date) to reverse the order
   /// </summary>
+  [JsonApiName("plan_sort_date")]
   PlanSortDate,
 
 }

@@ -8,6 +8,7 @@ public enum BlockoutQueryable
   /// <summary>
   /// Query on a specific group_identifier
   /// </summary>
+  [JsonApiName("group_identifier")]
   GroupIdentifier,
 
 }

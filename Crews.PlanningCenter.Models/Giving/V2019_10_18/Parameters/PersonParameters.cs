@@ -8,11 +8,13 @@ public enum PersonQueryable
   /// <summary>
   /// query on a specific first_name
   /// </summary>
+  [JsonApiName("first_name")]
   FirstName,
 
   /// <summary>
   /// query on a specific last_name
   /// </summary>
+  [JsonApiName("last_name")]
   LastName,
 
 }
@@ -25,6 +27,7 @@ public enum PersonFilterable
   /// <summary>
   /// Filter by has_donated.
   /// </summary>
+  [JsonApiName("has_donated")]
   HasDonated,
 
 }

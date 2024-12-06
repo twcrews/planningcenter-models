@@ -8,6 +8,7 @@ public enum ServiceTimeOrderable
   /// <summary>
   /// prefix with a hyphen (-time) to reverse the order
   /// </summary>
+  [JsonApiName("time")]
   Time,
 
 }

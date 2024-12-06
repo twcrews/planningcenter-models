@@ -8,11 +8,13 @@ public enum HouseholdMembershipIncludable
   /// <summary>
   /// include associated household
   /// </summary>
+  [JsonApiName("household")]
   Household,
 
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }
@@ -25,11 +27,13 @@ public enum HouseholdMembershipOrderable
   /// <summary>
   /// prefix with a hyphen (-pending) to reverse the order
   /// </summary>
+  [JsonApiName("pending")]
   Pending,
 
   /// <summary>
   /// prefix with a hyphen (-person_name) to reverse the order
   /// </summary>
+  [JsonApiName("person_name")]
   PersonName,
 
 }
@@ -42,11 +46,13 @@ public enum HouseholdMembershipQueryable
   /// <summary>
   /// Query on a specific pending
   /// </summary>
+  [JsonApiName("pending")]
   Pending,
 
   /// <summary>
   /// Query on a specific person_name
   /// </summary>
+  [JsonApiName("person_name")]
   PersonName,
 
 }

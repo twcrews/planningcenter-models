@@ -8,11 +8,13 @@ public enum FieldOptionOrderable
   /// <summary>
   /// prefix with a hyphen (-sequence) to reverse the order
   /// </summary>
+  [JsonApiName("sequence")]
   Sequence,
 
   /// <summary>
   /// prefix with a hyphen (-value) to reverse the order
   /// </summary>
+  [JsonApiName("value")]
   Value,
 
 }
@@ -25,11 +27,13 @@ public enum FieldOptionQueryable
   /// <summary>
   /// Query on a specific sequence
   /// </summary>
+  [JsonApiName("sequence")]
   Sequence,
 
   /// <summary>
   /// Query on a specific value
   /// </summary>
+  [JsonApiName("value")]
   Value,
 
 }

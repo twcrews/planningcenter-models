@@ -8,6 +8,7 @@ public enum SeriesOrderable
   /// <summary>
   /// prefix with a hyphen (-created_at) to reverse the order
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
 }
@@ -20,6 +21,7 @@ public enum SeriesQueryable
   /// <summary>
   /// Query on a specific title
   /// </summary>
+  [JsonApiName("title")]
   Title,
 
 }

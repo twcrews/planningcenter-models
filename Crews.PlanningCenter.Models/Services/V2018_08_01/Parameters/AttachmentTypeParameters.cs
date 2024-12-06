@@ -8,6 +8,7 @@ public enum AttachmentTypeOrderable
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }

@@ -8,6 +8,7 @@ public enum EventNoteIncludable
   /// <summary>
   /// include associated owner
   /// </summary>
+  [JsonApiName("owner")]
   Owner,
 
 }

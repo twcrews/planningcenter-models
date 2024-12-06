@@ -8,11 +8,13 @@ public enum NeededPositionIncludable
   /// <summary>
   /// include associated team
   /// </summary>
+  [JsonApiName("team")]
   Team,
 
   /// <summary>
   /// include associated time
   /// </summary>
+  [JsonApiName("time")]
   Time,
 
 }

@@ -8,6 +8,7 @@ public enum SpeakershipIncludable
   /// <summary>
   /// include associated speaker
   /// </summary>
+  [JsonApiName("speaker")]
   Speaker,
 
 }

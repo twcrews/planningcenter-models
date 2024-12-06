@@ -7,11 +7,13 @@ namespace Crews.PlanningCenter.Models.Giving.V2018_08_01.Entities;
 /// 
 /// The <c>Person</c> object in Planning Center is so crucial that we have an entire product dedicated to managing, keeping track of, editing, and creating these records and metadata around them. For additional info, take a look at the <a href="https://developer.planning.center/docs/#/apps/people">Planning Center People API Docs</a>.
 /// </summary>
+[JsonApiName("person")]
 public record Person
 {
   /// <summary>
   /// The unique identifier for a person.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
   /// <summary>
@@ -19,6 +21,7 @@ public record Person
   /// 
   /// Possible values: <c>administrator</c>, <c>reviewer</c>, <c>counter</c>, or <c>bookkeeper</c>
   /// </summary>
+  [JsonApiName("permissions")]
   public string? Permissions { get; init; }
 
   /// <summary>
@@ -34,6 +37,7 @@ public record Person
   /// ]
   /// </c>``
   /// </summary>
+  [JsonApiName("email_addresses")]
   public IEnumerable<JsonElement>? EmailAddresses { get; init; }
 
   /// <summary>
@@ -55,6 +59,7 @@ public record Person
   /// ]
   /// </c>``
   /// </summary>
+  [JsonApiName("addresses")]
   public IEnumerable<JsonElement>? Addresses { get; init; }
 
   /// <summary>
@@ -70,21 +75,25 @@ public record Person
   /// ]
   /// </c>``
   /// </summary>
+  [JsonApiName("phone_numbers")]
   public IEnumerable<JsonElement>? PhoneNumbers { get; init; }
 
   /// <summary>
   /// A person's first name.
   /// </summary>
+  [JsonApiName("first_name")]
   public string? FirstName { get; init; }
 
   /// <summary>
   /// A person's last name.
   /// </summary>
+  [JsonApiName("last_name")]
   public string? LastName { get; init; }
 
   /// <summary>
   /// The donor number for a person, if applicable. See our product documentation for more information on donor numbers: https://pcogiving.zendesk.com/hc/en-us/articles/360012298634-donor-numbers
   /// </summary>
+  [JsonApiName("donor_number")]
   public int? DonorNumber { get; init; }
 
 }

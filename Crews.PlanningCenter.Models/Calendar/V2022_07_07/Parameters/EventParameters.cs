@@ -8,21 +8,25 @@ public enum EventIncludable
   /// <summary>
   /// include associated attachments
   /// </summary>
+  [JsonApiName("attachments")]
   Attachments,
 
   /// <summary>
   /// include associated feed
   /// </summary>
+  [JsonApiName("feed")]
   Feed,
 
   /// <summary>
   /// include associated owner
   /// </summary>
+  [JsonApiName("owner")]
   Owner,
 
   /// <summary>
   /// include associated tags
   /// </summary>
+  [JsonApiName("tags")]
   Tags,
 
 }
@@ -35,41 +39,49 @@ public enum EventQueryable
   /// <summary>
   /// Query on a specific approval_status
   /// </summary>
+  [JsonApiName("approval_status")]
   ApprovalStatus,
 
   /// <summary>
   /// Query on a specific created_at
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// Query on a specific featured
   /// </summary>
+  [JsonApiName("featured")]
   Featured,
 
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
   /// <summary>
   /// Query on a specific percent_approved
   /// </summary>
+  [JsonApiName("percent_approved")]
   PercentApproved,
 
   /// <summary>
   /// Query on a specific percent_rejected
   /// </summary>
+  [JsonApiName("percent_rejected")]
   PercentRejected,
 
   /// <summary>
   /// Query on a specific updated_at
   /// </summary>
+  [JsonApiName("updated_at")]
   UpdatedAt,
 
   /// <summary>
   /// Query on a specific visible_in_church_center
   /// </summary>
+  [JsonApiName("visible_in_church_center")]
   VisibleInChurchCenter,
 
 }
@@ -82,6 +94,7 @@ public enum EventFilterable
   /// <summary>
   /// Filter by future.
   /// </summary>
+  [JsonApiName("future")]
   Future,
 
 }

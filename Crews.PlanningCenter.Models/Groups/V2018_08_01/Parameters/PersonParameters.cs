@@ -8,11 +8,13 @@ public enum PersonOrderable
   /// <summary>
   /// prefix with a hyphen (-first_name) to reverse the order
   /// </summary>
+  [JsonApiName("first_name")]
   FirstName,
 
   /// <summary>
   /// prefix with a hyphen (-last_name) to reverse the order
   /// </summary>
+  [JsonApiName("last_name")]
   LastName,
 
 }
@@ -25,11 +27,13 @@ public enum PersonQueryable
   /// <summary>
   /// Query on a specific first_name
   /// </summary>
+  [JsonApiName("first_name")]
   FirstName,
 
   /// <summary>
   /// Query on a specific last_name
   /// </summary>
+  [JsonApiName("last_name")]
   LastName,
 
 }

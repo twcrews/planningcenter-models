@@ -5,11 +5,13 @@ namespace Crews.PlanningCenter.Models.Services.V2018_08_01.Entities;
 /// <summary>
 /// Sections of an Arrangement, derived from its chord chart
 /// </summary>
+[JsonApiName("arrangement_sections")]
 public record ArrangementSections
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
   /// <summary>
@@ -36,6 +38,7 @@ public record ArrangementSections
   /// ]
   /// </c>``
   /// </summary>
+  [JsonApiName("sections")]
   public IEnumerable<JsonElement>? Sections { get; init; }
 
 }

@@ -8,6 +8,7 @@ public enum EventConnectionQueryable
   /// <summary>
   /// Query on a specific product_name
   /// </summary>
+  [JsonApiName("product_name")]
   ProductName,
 
 }

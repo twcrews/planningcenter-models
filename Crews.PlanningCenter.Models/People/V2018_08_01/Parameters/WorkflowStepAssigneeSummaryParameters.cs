@@ -8,6 +8,7 @@ public enum WorkflowStepAssigneeSummaryIncludable
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }

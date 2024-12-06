@@ -1,28 +1,35 @@
+using System.Text.Json;
+
 namespace Crews.PlanningCenter.Models.Services.V2018_08_01.Entities;
 
 /// <summary>
 /// Each song arrangement can have multiple keys. A key is the pitch center of the song.
 /// </summary>
+[JsonApiName("key")]
 public record Key
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("created_at")]
   public DateTime? CreatedAt { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("updated_at")]
   public DateTime? UpdatedAt { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("name")]
   public string? Name { get; init; }
 
   /// <summary>
@@ -35,6 +42,7 @@ public record Key
   /// }
   /// </c>
   /// </summary>
+  [JsonApiName("alternate_keys")]
   public string? AlternateKeys { get; init; }
 
   /// <summary>
@@ -44,6 +52,7 @@ public record Key
   /// 
   /// To set the key to minor append <c>m</c> to the key. e.g. <c>Cm</c>
   /// </summary>
+  [JsonApiName("ending_key")]
   public string? EndingKey { get; init; }
 
   /// <summary>
@@ -53,16 +62,19 @@ public record Key
   /// 
   /// To set the key to minor append <c>m</c> to the key. e.g. <c>Cm</c>
   /// </summary>
+  [JsonApiName("starting_key")]
   public string? StartingKey { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("starting_minor")]
   public bool? StartingMinor { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("ending_minor")]
   public bool? EndingMinor { get; init; }
 
 }

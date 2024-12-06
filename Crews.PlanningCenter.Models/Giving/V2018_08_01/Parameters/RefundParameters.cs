@@ -8,6 +8,7 @@ public enum RefundIncludable
   /// <summary>
   /// include associated designation_refunds
   /// </summary>
+  [JsonApiName("designation_refunds")]
   DesignationRefunds,
 
 }

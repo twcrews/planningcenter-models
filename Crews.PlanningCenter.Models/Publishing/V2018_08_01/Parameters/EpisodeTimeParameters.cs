@@ -8,6 +8,7 @@ public enum EpisodeTimeOrderable
   /// <summary>
   /// prefix with a hyphen (-starts_at) to reverse the order
   /// </summary>
+  [JsonApiName("starts_at")]
   StartsAt,
 
 }

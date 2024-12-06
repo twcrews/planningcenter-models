@@ -8,6 +8,7 @@ public enum FeedOrderable
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }
@@ -22,11 +23,13 @@ public enum FeedQueryable
   /// 
   /// Possible values: <c>registrations</c>, <c>groups</c>, <c>ical</c>, or <c>form</c>
   /// </summary>
+  [JsonApiName("feed_type")]
   FeedType,
 
   /// <summary>
   /// Query on a specific source_id
   /// </summary>
+  [JsonApiName("source_id")]
   SourceId,
 
 }

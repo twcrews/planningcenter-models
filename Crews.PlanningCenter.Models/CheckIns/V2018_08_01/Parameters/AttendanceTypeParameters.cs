@@ -8,6 +8,7 @@ public enum AttendanceTypeIncludable
   /// <summary>
   /// include associated event
   /// </summary>
+  [JsonApiName("event")]
   Event,
 
 }
@@ -20,11 +21,13 @@ public enum AttendanceTypeQueryable
   /// <summary>
   /// Query on a specific id
   /// </summary>
+  [JsonApiName("id")]
   Id,
 
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }

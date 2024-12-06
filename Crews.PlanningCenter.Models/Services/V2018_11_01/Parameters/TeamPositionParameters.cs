@@ -8,11 +8,13 @@ public enum TeamPositionIncludable
   /// <summary>
   /// include associated tags
   /// </summary>
+  [JsonApiName("tags")]
   Tags,
 
   /// <summary>
   /// include associated team
   /// </summary>
+  [JsonApiName("team")]
   Team,
 
 }
@@ -25,6 +27,7 @@ public enum TeamPositionOrderable
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }

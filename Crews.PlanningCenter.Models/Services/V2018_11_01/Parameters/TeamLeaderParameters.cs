@@ -8,11 +8,13 @@ public enum TeamLeaderIncludable
   /// <summary>
   /// include associated people
   /// </summary>
+  [JsonApiName("people")]
   People,
 
   /// <summary>
   /// include associated team
   /// </summary>
+  [JsonApiName("team")]
   Team,
 
 }
@@ -25,11 +27,13 @@ public enum TeamLeaderOrderable
   /// <summary>
   /// prefix with a hyphen (-first_name) to reverse the order
   /// </summary>
+  [JsonApiName("first_name")]
   FirstName,
 
   /// <summary>
   /// prefix with a hyphen (-last_name) to reverse the order
   /// </summary>
+  [JsonApiName("last_name")]
   LastName,
 
 }

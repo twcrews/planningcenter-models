@@ -8,6 +8,7 @@ public enum EventIncludable
   /// <summary>
   /// include associated attendance_types
   /// </summary>
+  [JsonApiName("attendance_types")]
   AttendanceTypes,
 
 }
@@ -20,11 +21,13 @@ public enum EventOrderable
   /// <summary>
   /// prefix with a hyphen (-created_at) to reverse the order
   /// </summary>
+  [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }
@@ -37,11 +40,13 @@ public enum EventQueryable
   /// <summary>
   /// Query on a specific id
   /// </summary>
+  [JsonApiName("id")]
   Id,
 
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }
@@ -54,21 +59,25 @@ public enum EventFilterable
   /// <summary>
   /// Filter by archived.
   /// </summary>
+  [JsonApiName("archived")]
   Archived,
 
   /// <summary>
   /// Filter by for_headcounts.
   /// </summary>
+  [JsonApiName("for_headcounts")]
   ForHeadcounts,
 
   /// <summary>
   /// Filter by for_registrations.
   /// </summary>
+  [JsonApiName("for_registrations")]
   ForRegistrations,
 
   /// <summary>
   /// Filter by not_archived.
   /// </summary>
+  [JsonApiName("not_archived")]
   NotArchived,
 
 }

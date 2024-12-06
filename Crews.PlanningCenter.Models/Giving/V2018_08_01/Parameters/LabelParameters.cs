@@ -8,6 +8,7 @@ public enum LabelQueryable
   /// <summary>
   /// query on a specific slug
   /// </summary>
+  [JsonApiName("slug")]
   Slug,
 
 }

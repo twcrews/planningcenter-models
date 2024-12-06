@@ -8,6 +8,7 @@ public enum RequiredApprovalIncludable
   /// <summary>
   /// include associated resource
   /// </summary>
+  [JsonApiName("resource")]
   Resource,
 
 }

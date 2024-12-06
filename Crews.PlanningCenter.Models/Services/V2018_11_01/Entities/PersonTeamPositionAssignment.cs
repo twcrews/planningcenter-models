@@ -5,21 +5,25 @@ namespace Crews.PlanningCenter.Models.Services.V2018_11_01.Entities;
 /// <summary>
 /// A person's assignment to a position within a team.
 /// </summary>
+[JsonApiName("person_team_position_assignment")]
 public record PersonTeamPositionAssignment
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("created_at")]
   public DateTime? CreatedAt { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("updated_at")]
   public DateTime? UpdatedAt { get; init; }
 
   /// <summary>
@@ -35,6 +39,7 @@ public record PersonTeamPositionAssignment
   /// "Three times a month"
   /// "Choose Weeks"
   /// </summary>
+  [JsonApiName("schedule_preference")]
   public string? SchedulePreference { get; init; }
 
   /// <summary>
@@ -43,6 +48,7 @@ public record PersonTeamPositionAssignment
   /// 
   /// e.g. ['1', '3', '5'] to prefer odd numbered weeks.
   /// </summary>
+  [JsonApiName("preferred_weeks")]
   public IEnumerable<JsonElement>? PreferredWeeks { get; init; }
 
 }

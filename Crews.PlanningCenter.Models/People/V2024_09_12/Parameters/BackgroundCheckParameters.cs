@@ -8,6 +8,7 @@ public enum BackgroundCheckIncludable
   /// <summary>
   /// include associated person
   /// </summary>
+  [JsonApiName("person")]
   Person,
 
 }
@@ -20,6 +21,7 @@ public enum BackgroundCheckFilterable
   /// <summary>
   /// Filter by current.
   /// </summary>
+  [JsonApiName("current")]
   Current,
 
 }

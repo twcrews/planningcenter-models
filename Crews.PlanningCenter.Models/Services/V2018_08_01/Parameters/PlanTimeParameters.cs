@@ -8,6 +8,7 @@ public enum PlanTimeIncludable
   /// <summary>
   /// include associated split_team_rehearsal_assignments
   /// </summary>
+  [JsonApiName("split_team_rehearsal_assignments")]
   SplitTeamRehearsalAssignments,
 
 }
@@ -20,6 +21,7 @@ public enum PlanTimeOrderable
   /// <summary>
   /// prefix with a hyphen (-starts_at) to reverse the order
   /// </summary>
+  [JsonApiName("starts_at")]
   StartsAt,
 
 }
@@ -32,6 +34,7 @@ public enum PlanTimeQueryable
   /// <summary>
   /// Query on a specific time_type
   /// </summary>
+  [JsonApiName("time_type")]
   TimeType,
 
 }

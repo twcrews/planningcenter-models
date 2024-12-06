@@ -8,6 +8,7 @@ public enum ScheduleIncludable
   /// <summary>
   /// include associated plan_times
   /// </summary>
+  [JsonApiName("plan_times")]
   PlanTimes,
 
 }
@@ -20,6 +21,7 @@ public enum ScheduleOrderable
   /// <summary>
   /// prefix with a hyphen (-starts_at) to reverse the order
   /// </summary>
+  [JsonApiName("starts_at")]
   StartsAt,
 
 }

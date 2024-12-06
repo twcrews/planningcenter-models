@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace Crews.PlanningCenter.Models.People.V2019_01_14.Entities;
 
 /// <summary>
@@ -5,11 +7,13 @@ namespace Crews.PlanningCenter.Models.People.V2019_01_14.Entities;
 /// 
 /// Note: This endpoint will always only return the first 15 people having a birthday in the next 30 days, ordered by birthday, ascending.
 /// </summary>
+[JsonApiName("birthday_people")]
 public record BirthdayPeople
 {
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
 }

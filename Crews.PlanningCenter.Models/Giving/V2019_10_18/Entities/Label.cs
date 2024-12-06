@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 
 /// <summary>
@@ -5,16 +7,19 @@ namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Entities;
 /// 
 /// Multiple <c>Label</c>s can be added for each <c>Donation</c>, and these will only be displayed in the Giving admin interface, so donors never see them.
 /// </summary>
+[JsonApiName("label")]
 public record Label
 {
   /// <summary>
   /// The unique identifier for a label.
   /// </summary>
+  [JsonApiName("id")]
   public string? ID { get; init; }
 
   /// <summary>
   /// The label text itself. Made up solely of lowercase letters, numbers, and dashes. When creating or updating a label, the string you provide will be formatted automatically. For example: <c>My awesome label!</c> will be saved as <c>my-awesome-label</c>
   /// </summary>
+  [JsonApiName("slug")]
   public string? Slug { get; init; }
 
 }

@@ -8,11 +8,13 @@ public enum EventLabelIncludable
   /// <summary>
   /// include associated event
   /// </summary>
+  [JsonApiName("event")]
   Event,
 
   /// <summary>
   /// include associated label
   /// </summary>
+  [JsonApiName("label")]
   Label,
 
 }

@@ -8,6 +8,7 @@ public enum EpisodeResourceOrderable
   /// <summary>
   /// prefix with a hyphen (-position) to reverse the order
   /// </summary>
+  [JsonApiName("position")]
   Position,
 
 }

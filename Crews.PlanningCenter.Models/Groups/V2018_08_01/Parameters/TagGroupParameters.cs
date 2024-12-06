@@ -8,11 +8,13 @@ public enum TagGroupOrderable
   /// <summary>
   /// prefix with a hyphen (-name) to reverse the order
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
   /// <summary>
   /// prefix with a hyphen (-position) to reverse the order
   /// </summary>
+  [JsonApiName("position")]
   Position,
 
 }
@@ -25,6 +27,7 @@ public enum TagGroupQueryable
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }
@@ -37,6 +40,7 @@ public enum TagGroupFilterable
   /// <summary>
   /// Filter by public.
   /// </summary>
+  [JsonApiName("public")]
   Public,
 
 }

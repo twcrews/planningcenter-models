@@ -8,11 +8,13 @@ public enum PeopleImportConflictQueryable
   /// <summary>
   /// Query on a specific kind
   /// </summary>
+  [JsonApiName("kind")]
   Kind,
 
   /// <summary>
   /// Query on a specific name
   /// </summary>
+  [JsonApiName("name")]
   Name,
 
 }
