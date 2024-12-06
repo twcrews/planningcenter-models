@@ -31,6 +31,7 @@ using System.Text.Json;
 namespace Crews.PlanningCenter.Models.<#=product.ToPascalCase()#>.V<#=version.ToSnakeCase()#>.Entities;
 
 <#=resource.Description.ToXmlDocSummary()#>
+[JsonApiName("<#=resource.ID#>")]
 public record <#=resource.Name#>
 {
 <#
@@ -51,6 +52,7 @@ public record <#=resource.Name#>
           }
 #>
 <#=description#>
+  [JsonApiName("<#=attribute.Name#>")]
   public <#=attribute.ClrTypeName#>? <#=attributeName.ToPascalCase()#> { get; init; }
 
 <#

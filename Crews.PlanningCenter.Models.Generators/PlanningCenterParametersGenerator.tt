@@ -46,7 +46,8 @@ public enum <#=resource.Name#>Includable
           {
 #>
 <#=includable.Description.ToXmlDocSummary(indentSpaces: 2)#>
-  <#=includable.Name.ToPascalCase()#>,
+  [JsonApiName("<#=includable.Name#>")]
+  <#=includable.Name.ToPascalCase('.', '_', '-')#>,
 
 <#
           }
@@ -67,7 +68,8 @@ public enum <#=resource.Name#>Orderable
           {
 #>
 <#=orderable.Description.ToXmlDocSummary(indentSpaces: 2)#>
-  <#=orderable.Name.ToPascalCase()#>,
+  [JsonApiName("<#=orderable.Name#>")]
+  <#=orderable.Name.ToPascalCase('.', '_', '-')#>,
 
 <#
           }
@@ -88,7 +90,8 @@ public enum <#=resource.Name#>Queryable
           {
 #>
 <#=queryable.Description.ToXmlDocSummary(indentSpaces: 2)#>
-  <#=queryable.Name.ToPascalCase()#>,
+  [JsonApiName("<#=queryable.Name#>")]
+  <#=queryable.Name.ToPascalCase('.', '_', '-')#>,
 
 <#
           }
@@ -109,7 +112,8 @@ public enum <#=resource.Name#>Filterable
           {
 #>
 <#=$"Filter by {filterable}.".ToXmlDocSummary(indentSpaces: 2)#>
-  <#=filterable.ToPascalCase()#>,
+  [JsonApiName("<#=filterable#>")]
+  <#=filterable.ToPascalCase('.', '_', '-')#>,
 
 <#
           }
