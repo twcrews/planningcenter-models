@@ -48,4 +48,10 @@ public record Organization
   [JsonApiName("onboarding")]
   public bool? Onboarding { get; init; }
 
+  /// <summary>
+  /// The day of the week the calendar starts on
+  /// </summary>
+  [JsonApiName("calendar_starts_on")]
+  public string? CalendarStartsOn { get; init; }
+
 }

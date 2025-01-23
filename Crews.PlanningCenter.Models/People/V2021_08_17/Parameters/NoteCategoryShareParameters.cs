@@ -21,7 +21,7 @@ public enum NoteCategoryShareQueryable
   /// <summary>
   /// Query on a specific permission
   /// 
-  /// Possible values: <c>view</c> or <c>view_create</c>
+  /// Possible values: <c>view</c>, <c>view_create</c>, or <c>manage</c>
   /// </summary>
   [JsonApiName("permission")]
   Permission,

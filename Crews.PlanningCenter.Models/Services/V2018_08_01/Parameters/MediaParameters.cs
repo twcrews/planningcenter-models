@@ -111,6 +111,12 @@ public enum MediaFilterable
   Countdown,
 
   /// <summary>
+  /// Filter by curriculum.
+  /// </summary>
+  [JsonApiName("curriculum")]
+  Curriculum,
+
+  /// <summary>
   /// Filter by document.
   /// </summary>
   [JsonApiName("document")]

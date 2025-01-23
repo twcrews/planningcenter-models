@@ -115,12 +115,14 @@ public class PlanningCenterApiReferenceService
 					string description = descriptionElement.GetString() ??
 						"Planning Center does not provide a description for this attribute.";
 
+					string name = nameElement.GetString() ?? throw NullJsonElementException;
+
 					return new PlanningCenterResourceAttributeInfo
 					{
-						Name = nameElement.GetString() ?? throw NullJsonElementException,
+						Name = name,
 						Description = description,
 						Type = typeNameElement.GetString() ?? throw NullJsonElementException,
-						ClrTypeName = GetClrTypeName(typeNameElement.GetString() ?? throw NullJsonElementException)
+						ClrTypeName = GetClrTypeName(typeNameElement.GetString() ?? throw NullJsonElementException, name)
 					};
 				}
 				throw BadJsonHierarchyException;
@@ -189,12 +191,14 @@ public class PlanningCenterApiReferenceService
 				string description = descriptionElement.GetString() ??
 					"Planning Center does not provide a description for this parameter.";
 
+				string name = valueElement.GetString() ?? throw NullJsonElementException;
+
 				return new PlanningCenterResourceAttributeInfo
 				{
-					Name = valueElement.GetString() ?? throw NullJsonElementException,
+					Name = name,
 					Description = description,
 					Type = typeElement.GetString() ?? throw NullJsonElementException,
-					ClrTypeName = GetClrTypeName(typeElement.GetString() ?? throw NullJsonElementException)
+					ClrTypeName = GetClrTypeName(typeElement.GetString() ?? throw NullJsonElementException, name)
 				};
 			}
 			throw BadJsonHierarchyException;
@@ -229,6 +233,13 @@ public class PlanningCenterApiReferenceService
 			});
 		}
 		throw BadJsonHierarchyException;
+	}
+
+	private static string GetClrTypeName(string typeName, string name)
+	{
+		// Some Organization object docs incorrectly type the date format attribute as an int.
+		if (typeName == "integer" && name == "date_format") return "string";
+		return GetClrTypeName(typeName);
 	}
 
 	private static string GetClrTypeName(string typeName) => typeName switch

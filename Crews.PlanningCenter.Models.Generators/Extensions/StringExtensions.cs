@@ -11,7 +11,7 @@ public static class StringExtensions
 		string content = string.Join('\n', target
 			.Trim()
 			.RecursivelyRemoveTripleNewLines()
-			.FixTagBrackets()
+			.FixTypeVariableBrackets()
 			.FixAmpersands()
 			.FixLinks()
 			.FixInlineCode()
@@ -40,5 +40,5 @@ public static class StringExtensions
 
 	private static string FixInlineCode(this string target) => Regex.Replace(target, @"`([^`]+)`", "<c>$1</c>");
 
-	private static string FixTagBrackets(this string target) => target.Replace('<', '{').Replace('>', '}');
+	private static string FixTypeVariableBrackets(this string target) => Regex.Replace(target, @"<([\w]+)>", "{$1}");
 }

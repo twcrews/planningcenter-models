@@ -29,6 +29,12 @@ public record Group
   public bool? CanCreateConversation { get; init; }
 
   /// <summary>
+  /// A boolean representing whether or not the group has Chat enabled.
+  /// </summary>
+  [JsonApiName("chat_enabled")]
+  public bool? ChatEnabled { get; init; }
+
+  /// <summary>
   /// If a contact_email is provided, we will display a contact button on the public page
   /// where potential members can ask questions before joining the group.
   /// </summary>

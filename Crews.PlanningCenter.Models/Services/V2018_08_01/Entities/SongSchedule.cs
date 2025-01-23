@@ -44,4 +44,10 @@ public record SongSchedule
   [JsonApiName("plan_sort_date")]
   public string? PlanSortDate { get; init; }
 
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("plan_visible")]
+  public bool? PlanVisible { get; init; }
+
 }

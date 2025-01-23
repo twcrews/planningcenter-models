@@ -105,6 +105,8 @@ public record Media
   /// 
   /// - <c>countdown</c>
   /// 
+  /// - <c>curriculum</c>
+  /// 
   /// - <c>document</c>
   /// 
   /// - <c>drama</c>
