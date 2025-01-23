@@ -21,7 +21,7 @@ public record NoteCategoryShare
   public string? Group { get; init; }
 
   /// <summary>
-  /// Possible values: <c>view</c> or <c>view_create</c>
+  /// Possible values: <c>view</c>, <c>view_create</c>, or <c>manage</c>
   /// </summary>
   [JsonApiName("permission")]
   public string? Permission { get; init; }

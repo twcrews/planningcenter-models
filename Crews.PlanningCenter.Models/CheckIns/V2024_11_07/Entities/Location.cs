@@ -133,10 +133,4 @@ public record Location
   [JsonApiName("created_at")]
   public DateTime? CreatedAt { get; init; }
 
-  /// <summary>
-  /// Planning Center does not provide a description for this attribute.
-  /// </summary>
-  [JsonApiName("milestone")]
-  public string? Milestone { get; init; }
-
 }

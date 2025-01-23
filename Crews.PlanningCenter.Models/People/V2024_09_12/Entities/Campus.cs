@@ -84,7 +84,7 @@ public record Campus
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("date_format")]
-  public int? DateFormat { get; init; }
+  public string? DateFormat { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
