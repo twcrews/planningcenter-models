@@ -49,10 +49,22 @@ public enum WorkflowCardOrderable
   CreatedAt,
 
   /// <summary>
+  /// prefix with a hyphen (-first_name) to reverse the order
+  /// </summary>
+  [JsonApiName("first_name")]
+  FirstName,
+
+  /// <summary>
   /// prefix with a hyphen (-flagged_for_notification_at) to reverse the order
   /// </summary>
   [JsonApiName("flagged_for_notification_at")]
   FlaggedForNotificationAt,
+
+  /// <summary>
+  /// prefix with a hyphen (-last_name) to reverse the order
+  /// </summary>
+  [JsonApiName("last_name")]
+  LastName,
 
   /// <summary>
   /// prefix with a hyphen (-moved_to_step_at) to reverse the order
@@ -85,6 +97,12 @@ public enum WorkflowCardOrderable
 /// </summary>
 public enum WorkflowCardQueryable
 {
+  /// <summary>
+  /// Query on a related assignee
+  /// </summary>
+  [JsonApiName("assignee_id")]
+  AssigneeId,
+
   /// <summary>
   /// Query on a specific overdue
   /// </summary>

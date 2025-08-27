@@ -166,4 +166,10 @@ public record Attachment
   [JsonApiName("file_upload_identifier")]
   public string? FileUploadIdentifier { get; init; }
 
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("deleted_at")]
+  public DateTime? DeletedAt { get; init; }
+
 }

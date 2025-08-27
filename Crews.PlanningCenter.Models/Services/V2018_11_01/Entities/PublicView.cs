@@ -29,6 +29,12 @@ public record PublicView
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("item_descriptions")]
+  public bool? ItemDescriptions { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("item_lengths")]
   public bool? ItemLengths { get; init; }
 

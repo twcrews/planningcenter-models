@@ -344,37 +344,43 @@ public enum PersonQueryable
   PeoplePermissions,
 
   /// <summary>
+  /// Query on a related primary_campus
+  /// </summary>
+  [JsonApiName("primary_campus_id")]
+  PrimaryCampusId,
+
+  /// <summary>
   /// Query on a specific remote_id
   /// </summary>
   [JsonApiName("remote_id")]
   RemoteId,
 
   /// <summary>
-  /// Search by Name (first, last, combination)
+  /// Query on a specific search_name
   /// </summary>
   [JsonApiName("search_name")]
   SearchName,
 
   /// <summary>
-  /// Search by Name (first, last, combination) or Email
+  /// Query on a specific search_name_or_email
   /// </summary>
   [JsonApiName("search_name_or_email")]
   SearchNameOrEmail,
 
   /// <summary>
-  /// Search by Name (first, last, combination), Email, or Phone Number
+  /// Query on a specific search_name_or_email_or_phone_number
   /// </summary>
   [JsonApiName("search_name_or_email_or_phone_number")]
   SearchNameOrEmailOrPhoneNumber,
 
   /// <summary>
-  /// Search by Phone Number
+  /// Query on a specific search_phone_number
   /// </summary>
   [JsonApiName("search_phone_number")]
   SearchPhoneNumber,
 
   /// <summary>
-  /// Search by Phone Number E164
+  /// Query on a specific search_phone_number_e164
   /// </summary>
   [JsonApiName("search_phone_number_e164")]
   SearchPhoneNumberE164,

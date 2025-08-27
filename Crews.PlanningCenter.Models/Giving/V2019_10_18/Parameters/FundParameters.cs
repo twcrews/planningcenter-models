@@ -6,25 +6,27 @@ namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Parameters;
 public enum FundQueryable
 {
   /// <summary>
-  /// query on a specific default
+  /// Query on a specific default
   /// </summary>
   [JsonApiName("default")]
   Default,
 
   /// <summary>
-  /// query on a specific id
+  /// Query on a specific id
   /// </summary>
   [JsonApiName("id")]
   Id,
 
   /// <summary>
-  /// query on a specific name
+  /// Query on a specific name
   /// </summary>
   [JsonApiName("name")]
   Name,
 
   /// <summary>
-  /// query on a specific visibility
+  /// Query on a specific visibility
+  /// 
+  /// Possible values: <c>everywhere</c>, <c>admin_only</c>, <c>nowhere</c>, or <c>hidden</c>
   /// </summary>
   [JsonApiName("visibility")]
   Visibility,

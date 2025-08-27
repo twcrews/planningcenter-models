@@ -17,7 +17,7 @@ public record Person
   public string? ID { get; init; }
 
   /// <summary>
-  /// The level of Giving access granted to a person. For more info on permissions in Giving, please refer to our product documentation: https://pcogiving.zendesk.com/hc/en-us/articles/206541708-Permissions-in-Giving
+  /// The level of Giving access granted to a person. See our product documentation for more information on <a href="https://pcogiving.zendesk.com/hc/en-us/articles/206541708-Permissions-in-Giving">permissions in Giving</a>.
   /// 
   /// Possible values: <c>administrator</c>, <c>reviewer</c>, <c>counter</c>, or <c>bookkeeper</c>
   /// </summary>
@@ -91,9 +91,15 @@ public record Person
   public string? LastName { get; init; }
 
   /// <summary>
-  /// The donor number for a person, if applicable. See our product documentation for more information on donor numbers: https://pcogiving.zendesk.com/hc/en-us/articles/360012298634-donor-numbers
+  /// The donor number for a person, if applicable. See our product documentation for more information on <a href="https://pcogiving.zendesk.com/hc/en-us/articles/360012298634-donor-numbers">donor numbers</a>.
   /// </summary>
   [JsonApiName("donor_number")]
   public int? DonorNumber { get; init; }
+
+  /// <summary>
+  /// Timestamp of a person's first donation or <c>null</c> if they have never donated.
+  /// </summary>
+  [JsonApiName("first_donated_at")]
+  public DateTime? FirstDonatedAt { get; init; }
 
 }

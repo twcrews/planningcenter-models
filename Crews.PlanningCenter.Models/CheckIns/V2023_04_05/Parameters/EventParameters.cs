@@ -63,6 +63,12 @@ public enum EventFilterable
   Archived,
 
   /// <summary>
+  /// Filter by for_campus.
+  /// </summary>
+  [JsonApiName("for_campus")]
+  ForCampus,
+
+  /// <summary>
   /// Filter by for_headcounts.
   /// </summary>
   [JsonApiName("for_headcounts")]

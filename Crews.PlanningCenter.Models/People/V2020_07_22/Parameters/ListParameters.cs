@@ -79,6 +79,12 @@ public enum ListOrderable
   CreatedAt,
 
   /// <summary>
+  /// prefix with a hyphen (-list_categories.name) to reverse the order
+  /// </summary>
+  [JsonApiName("list_categories.name")]
+  ListCategoriesName,
+
+  /// <summary>
   /// prefix with a hyphen (-list_category_id) to reverse the order
   /// </summary>
   [JsonApiName("list_category_id")]

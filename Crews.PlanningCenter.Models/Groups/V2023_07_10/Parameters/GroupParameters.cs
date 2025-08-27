@@ -65,6 +65,12 @@ public enum GroupQueryable
 public enum GroupFilterable
 {
   /// <summary>
+  /// Filter by campus.
+  /// </summary>
+  [JsonApiName("campus")]
+  Campus,
+
+  /// <summary>
   /// Filter by group.
   /// </summary>
   [JsonApiName("group")]

@@ -38,7 +38,7 @@ public enum BatchOrderable
 public enum BatchQueryable
 {
   /// <summary>
-  /// query on a specific updated_at
+  /// Query on a specific updated_at
   /// </summary>
   [JsonApiName("updated_at")]
   UpdatedAt,

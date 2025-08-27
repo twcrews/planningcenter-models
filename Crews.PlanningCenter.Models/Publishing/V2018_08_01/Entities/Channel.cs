@@ -83,6 +83,12 @@ public record Channel
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("default_video_url")]
+  public string? DefaultVideoUrl { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("enable_audio")]
   public bool? EnableAudio { get; init; }
 

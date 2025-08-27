@@ -26,3 +26,16 @@ public enum FolderOrderable
 
 }
 
+/// <summary>
+/// Queryable attributes for <see cref="Entities.Folder" />.
+/// </summary>
+public enum FolderQueryable
+{
+  /// <summary>
+  /// Query on a related parent
+  /// </summary>
+  [JsonApiName("parent_id")]
+  ParentId,
+
+}
+

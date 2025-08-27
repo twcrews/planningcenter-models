@@ -18,7 +18,7 @@ public record Event
   /// <summary>
   /// This is a group setting that applies to all the events in the group.
   /// If selected, an email will be sent to the primary email address of the group leader
-  /// 10 minutes before the event start time, asking them to report attendance.
+  /// 60 minutes before the event start time, asking them to report attendance.
   /// </summary>
   [JsonApiName("attendance_requests_enabled")]
   public bool? AttendanceRequestsEnabled { get; init; }

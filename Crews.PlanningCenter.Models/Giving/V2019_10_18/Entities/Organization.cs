@@ -26,4 +26,10 @@ public record Organization
   [JsonApiName("time_zone")]
   public string? TimeZone { get; init; }
 
+  /// <summary>
+  /// <c>true</c> if this organization is accepting Text2Give donations, <c>false</c> otherwise.
+  /// </summary>
+  [JsonApiName("text2give_enabled")]
+  public bool? Text2giveEnabled { get; init; }
+
 }

@@ -68,6 +68,12 @@ public enum FieldDatumOrderable
 public enum FieldDatumQueryable
 {
   /// <summary>
+  /// Query on a related field_definition
+  /// </summary>
+  [JsonApiName("field_definition_id")]
+  FieldDefinitionId,
+
+  /// <summary>
   /// Query on a specific file
   /// </summary>
   [JsonApiName("file")]

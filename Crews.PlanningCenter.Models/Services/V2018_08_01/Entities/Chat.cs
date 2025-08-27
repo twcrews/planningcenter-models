@@ -50,4 +50,10 @@ public record Chat
   [JsonApiName("teams_i_lead")]
   public IEnumerable<JsonElement>? TeamsILead { get; init; }
 
+  /// <summary>
+  /// Only available when requested with the <c>?fields</c> param
+  /// </summary>
+  [JsonApiName("my_teams")]
+  public IEnumerable<JsonElement>? MyTeams { get; init; }
+
 }

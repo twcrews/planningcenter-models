@@ -6,13 +6,13 @@ namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Parameters;
 public enum PersonQueryable
 {
   /// <summary>
-  /// query on a specific first_name
+  /// Query on a specific first_name
   /// </summary>
   [JsonApiName("first_name")]
   FirstName,
 
   /// <summary>
-  /// query on a specific last_name
+  /// Query on a specific last_name
   /// </summary>
   [JsonApiName("last_name")]
   LastName,

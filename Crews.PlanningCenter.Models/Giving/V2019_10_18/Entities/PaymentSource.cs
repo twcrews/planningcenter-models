@@ -34,12 +34,4 @@ public record PaymentSource
   [JsonApiName("name")]
   public string? Name { get; init; }
 
-  /// <summary>
-  /// For more info on payment source types, please refer to our <a href="https://pcogiving.zendesk.com/hc/en-us/articles/115012277207-Payment-Sources#create-the-payment-source-1">documentation on creating a payment source</a>.
-  /// 
-  /// Possible values: <c>direct_from_donor</c>, <c>donor_advised_fund</c>, or <c>qualified_charitable_distribution</c>
-  /// </summary>
-  [JsonApiName("payment_source_type")]
-  public string? PaymentSourceType { get; init; }
-
 }

@@ -56,4 +56,10 @@ public record Organization
   [JsonApiName("avatar_url")]
   public string? AvatarUrl { get; init; }
 
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("church_center_subdomain")]
+  public string? ChurchCenterSubdomain { get; init; }
+
 }

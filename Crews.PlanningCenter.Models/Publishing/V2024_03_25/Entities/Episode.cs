@@ -53,6 +53,12 @@ public record Episode
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("library_video_embed_code")]
+  public string? LibraryVideoEmbedCode { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("library_video_thumbnail_url")]
   public string? LibraryVideoThumbnailUrl { get; init; }
 
@@ -67,6 +73,12 @@ public record Episode
   /// </summary>
   [JsonApiName("needs_library_audio_or_video_url")]
   public bool? NeedsLibraryAudioOrVideoUrl { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("needs_notes_template")]
+  public bool? NeedsNotesTemplate { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -127,6 +139,12 @@ public record Episode
   /// </summary>
   [JsonApiName("video_thumbnail_url")]
   public string? VideoThumbnailUrl { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("video_embed_code")]
+  public string? VideoEmbedCode { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

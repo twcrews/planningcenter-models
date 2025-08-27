@@ -26,3 +26,16 @@ public enum ScheduleOrderable
 
 }
 
+/// <summary>
+/// Queryable attributes for <see cref="Entities.Schedule" />.
+/// </summary>
+public enum ScheduleQueryable
+{
+  /// <summary>
+  /// Query on a related plan
+  /// </summary>
+  [JsonApiName("plan_id")]
+  PlanId,
+
+}
+

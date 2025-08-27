@@ -58,4 +58,10 @@ public record GroupType
   [JsonApiName("position")]
   public int? Position { get; init; }
 
+  /// <summary>
+  /// The public URL for the group on Church Center.
+  /// </summary>
+  [JsonApiName("public_church_center_web_url")]
+  public string? PublicChurchCenterWebUrl { get; init; }
+
 }

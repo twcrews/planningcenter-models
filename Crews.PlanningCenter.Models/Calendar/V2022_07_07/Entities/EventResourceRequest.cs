@@ -53,4 +53,10 @@ public record EventResourceRequest
   [JsonApiName("quantity")]
   public int? Quantity { get; init; }
 
+  /// <summary>
+  /// Whether this resource request is visible on kiosks
+  /// </summary>
+  [JsonApiName("visible_on_kiosks")]
+  public bool? VisibleOnKiosks { get; init; }
+
 }

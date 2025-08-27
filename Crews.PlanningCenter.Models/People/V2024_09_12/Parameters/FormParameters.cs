@@ -11,6 +11,12 @@ public enum FormIncludable
   [JsonApiName("campus")]
   Campus,
 
+  /// <summary>
+  /// include associated category
+  /// </summary>
+  [JsonApiName("category")]
+  Category,
+
 }
 
 /// <summary>

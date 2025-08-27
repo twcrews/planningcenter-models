@@ -56,6 +56,12 @@ public enum ResourceApprovalGroupQueryable
   CreatedAt,
 
   /// <summary>
+  /// Query on a specific id
+  /// </summary>
+  [JsonApiName("id")]
+  Id,
+
+  /// <summary>
   /// Query on a specific name
   /// </summary>
   [JsonApiName("name")]

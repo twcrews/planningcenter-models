@@ -110,6 +110,12 @@ public enum CheckInOrderable
 public enum CheckInQueryable
 {
   /// <summary>
+  /// Query on a related person
+  /// </summary>
+  [JsonApiName("account_center_person_id")]
+  AccountCenterPersonId,
+
+  /// <summary>
   /// Query on a specific created_at
   /// </summary>
   [JsonApiName("created_at")]

@@ -29,6 +29,12 @@ public record NoteTemplate
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("auto_create_free_form_notes")]
+  public bool? AutoCreateFreeFormNotes { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("published_at")]
   public DateTime? PublishedAt { get; init; }
 
