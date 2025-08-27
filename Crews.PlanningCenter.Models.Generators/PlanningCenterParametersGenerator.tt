@@ -1,9 +1,5 @@
 <#@ template debug="true" hostspecific="true" language="C#" #>
 <#@ output extension="/" #>
-<#@ assembly name="/workspaces/planningcenter-models/Crews.PlanningCenter.Models.Generators/bin/Debug/net8.0/Crews.PlanningCenter.Models.Generators.dll" #>
-<#@ assembly name="/home/vscode/.nuget/packages/microsoft.extensions.options/9.0.0/lib/net9.0/Microsoft.Extensions.Options.dll" #>
-<#@ assembly name="/home/vscode/.nuget/packages/crews.extensions.http/1.0.0/lib/net8.0/Crews.Extensions.Http.dll" #>
-<#@ assembly name="/home/vscode/.nuget/packages/crews.extensions.primitives/1.1.0/lib/net8.0/Crews.Extensions.Primitives.dll" #>
 <#@ import namespace="Crews.PlanningCenter.Models.Generators" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Threading.Tasks" #>
