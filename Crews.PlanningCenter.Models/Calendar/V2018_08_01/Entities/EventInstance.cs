@@ -42,6 +42,12 @@ public record EventInstance
   public string? Location { get; init; }
 
   /// <summary>
+  /// Name of event. Can be overridden for specific instances
+  /// </summary>
+  [JsonApiName("name")]
+  public string? Name { get; init; }
+
+  /// <summary>
   /// For a recurring event instance, the interval of how often the event instance occurs
   /// </summary>
   [JsonApiName("recurrence")]

@@ -44,13 +44,13 @@ public enum PledgeOrderable
 public enum PledgeQueryable
 {
   /// <summary>
-  /// query on a specific created_at
+  /// Query on a specific created_at
   /// </summary>
   [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
-  /// query on a specific updated_at
+  /// Query on a specific updated_at
   /// </summary>
   [JsonApiName("updated_at")]
   UpdatedAt,

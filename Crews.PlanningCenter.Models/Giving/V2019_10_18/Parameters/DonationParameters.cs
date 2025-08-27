@@ -68,31 +68,33 @@ public enum DonationOrderable
 public enum DonationQueryable
 {
   /// <summary>
-  /// query on a specific completed_at
+  /// Query on a specific completed_at
   /// </summary>
   [JsonApiName("completed_at")]
   CompletedAt,
 
   /// <summary>
-  /// query on a specific created_at
+  /// Query on a specific created_at
   /// </summary>
   [JsonApiName("created_at")]
   CreatedAt,
 
   /// <summary>
-  /// query on a specific payment_method
+  /// Query on a specific payment_method
+  /// 
+  /// Possible values: <c>ach</c>, <c>cash</c>, <c>check</c>, or <c>card</c>
   /// </summary>
   [JsonApiName("payment_method")]
   PaymentMethod,
 
   /// <summary>
-  /// query on a specific received_at
+  /// Query on a specific received_at
   /// </summary>
   [JsonApiName("received_at")]
   ReceivedAt,
 
   /// <summary>
-  /// query on a specific updated_at
+  /// Query on a specific updated_at
   /// </summary>
   [JsonApiName("updated_at")]
   UpdatedAt,

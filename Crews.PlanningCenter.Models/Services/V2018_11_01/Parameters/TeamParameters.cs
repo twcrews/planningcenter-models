@@ -18,10 +18,10 @@ public enum TeamIncludable
   PersonTeamPositionAssignments,
 
   /// <summary>
-  /// include associated service_type
+  /// include associated service_types
   /// </summary>
-  [JsonApiName("service_type")]
-  ServiceType,
+  [JsonApiName("service_types")]
+  ServiceTypes,
 
   /// <summary>
   /// include associated team_leaders
@@ -72,6 +72,25 @@ public enum TeamQueryable
   /// </summary>
   [JsonApiName("name")]
   Name,
+
+}
+
+/// <summary>
+/// Filterable attributes for <see cref="Entities.Team" />.
+/// </summary>
+public enum TeamFilterable
+{
+  /// <summary>
+  /// Filter by editable.
+  /// </summary>
+  [JsonApiName("editable")]
+  Editable,
+
+  /// <summary>
+  /// Filter by service_types.
+  /// </summary>
+  [JsonApiName("service_types")]
+  ServiceTypes,
 
 }
 

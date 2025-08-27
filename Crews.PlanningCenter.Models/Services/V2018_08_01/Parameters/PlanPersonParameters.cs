@@ -31,3 +31,16 @@ public enum PlanPersonIncludable
 
 }
 
+/// <summary>
+/// Queryable attributes for <see cref="Entities.PlanPerson" />.
+/// </summary>
+public enum PlanPersonQueryable
+{
+  /// <summary>
+  /// Query on a related team
+  /// </summary>
+  [JsonApiName("team_id")]
+  TeamId,
+
+}
+

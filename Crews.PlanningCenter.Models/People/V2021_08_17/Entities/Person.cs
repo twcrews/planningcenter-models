@@ -23,14 +23,20 @@ public record Person
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  [JsonApiName("demographic_avatar_url")]
-  public string? DemographicAvatarUrl { get; init; }
+  [JsonApiName("first_name")]
+  public string? FirstName { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  [JsonApiName("first_name")]
-  public string? FirstName { get; init; }
+  [JsonApiName("last_name")]
+  public string? LastName { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("demographic_avatar_url")]
+  public string? DemographicAvatarUrl { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -91,12 +97,6 @@ public record Person
   /// </summary>
   [JsonApiName("graduation_year")]
   public int? GraduationYear { get; init; }
-
-  /// <summary>
-  /// Planning Center does not provide a description for this attribute.
-  /// </summary>
-  [JsonApiName("last_name")]
-  public string? LastName { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

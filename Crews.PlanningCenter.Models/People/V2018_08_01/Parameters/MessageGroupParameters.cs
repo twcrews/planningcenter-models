@@ -61,6 +61,18 @@ public enum MessageGroupOrderable
   MessageType,
 
   /// <summary>
+  /// prefix with a hyphen (-reply_to_address) to reverse the order
+  /// </summary>
+  [JsonApiName("reply_to_address")]
+  ReplyToAddress,
+
+  /// <summary>
+  /// prefix with a hyphen (-reply_to_name) to reverse the order
+  /// </summary>
+  [JsonApiName("reply_to_name")]
+  ReplyToName,
+
+  /// <summary>
   /// prefix with a hyphen (-subject) to reverse the order
   /// </summary>
   [JsonApiName("subject")]
@@ -120,6 +132,18 @@ public enum MessageGroupQueryable
   /// </summary>
   [JsonApiName("message_type")]
   MessageType,
+
+  /// <summary>
+  /// Query on a specific reply_to_address
+  /// </summary>
+  [JsonApiName("reply_to_address")]
+  ReplyToAddress,
+
+  /// <summary>
+  /// Query on a specific reply_to_name
+  /// </summary>
+  [JsonApiName("reply_to_name")]
+  ReplyToName,
 
   /// <summary>
   /// Query on a specific subject

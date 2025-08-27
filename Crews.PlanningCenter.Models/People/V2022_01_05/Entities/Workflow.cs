@@ -53,6 +53,30 @@ public record Workflow
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("total_steps_count")]
+  public int? TotalStepsCount { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("total_unassigned_steps_count")]
+  public int? TotalUnassignedStepsCount { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("total_unassigned_card_count")]
+  public int? TotalUnassignedCardCount { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("total_overdue_card_count")]
+  public int? TotalOverdueCardCount { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("created_at")]
   public DateTime? CreatedAt { get; init; }
 
@@ -67,6 +91,12 @@ public record Workflow
   /// </summary>
   [JsonApiName("deleted_at")]
   public DateTime? DeletedAt { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("archived_at")]
+  public DateTime? ArchivedAt { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

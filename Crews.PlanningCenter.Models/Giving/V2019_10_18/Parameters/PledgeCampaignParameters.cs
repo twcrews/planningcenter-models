@@ -38,13 +38,19 @@ public enum PledgeCampaignOrderable
 public enum PledgeCampaignQueryable
 {
   /// <summary>
-  /// query on a specific ends_at
+  /// Query on a specific ends_at
   /// </summary>
   [JsonApiName("ends_at")]
   EndsAt,
 
   /// <summary>
-  /// query on a specific starts_at
+  /// Query on a related fund
+  /// </summary>
+  [JsonApiName("fund_id")]
+  FundId,
+
+  /// <summary>
+  /// Query on a specific starts_at
   /// </summary>
   [JsonApiName("starts_at")]
   StartsAt,

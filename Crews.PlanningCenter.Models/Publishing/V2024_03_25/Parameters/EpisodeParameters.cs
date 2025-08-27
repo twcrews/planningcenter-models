@@ -74,6 +74,12 @@ public enum EpisodeOrderable
 public enum EpisodeQueryable
 {
   /// <summary>
+  /// Query on a related series
+  /// </summary>
+  [JsonApiName("series_id")]
+  SeriesId,
+
+  /// <summary>
   /// Query on a specific services_plan_remote_identifier
   /// </summary>
   [JsonApiName("services_plan_remote_identifier")]

@@ -77,4 +77,10 @@ public record Fund
   [JsonApiName("deletable")]
   public bool? Deletable { get; init; }
 
+  /// <summary>
+  /// A URL-friendly identifier for a fund, derived from the fund name.
+  /// </summary>
+  [JsonApiName("slug")]
+  public string? Slug { get; init; }
+
 }

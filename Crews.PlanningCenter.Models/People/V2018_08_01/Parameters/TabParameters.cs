@@ -41,7 +41,6 @@ public enum TabOrderable
   /// </summary>
   [JsonApiName("slug")]
   Slug,
-
 }
 
 /// <summary>

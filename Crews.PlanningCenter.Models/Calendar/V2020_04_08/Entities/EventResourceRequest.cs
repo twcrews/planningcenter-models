@@ -48,6 +48,12 @@ public record EventResourceRequest
   public int? Quantity { get; init; }
 
   /// <summary>
+  /// Whether this resource request is visible on kiosks
+  /// </summary>
+  [JsonApiName("visible_on_kiosks")]
+  public bool? VisibleOnKiosks { get; init; }
+
+  /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("percent_approved")]

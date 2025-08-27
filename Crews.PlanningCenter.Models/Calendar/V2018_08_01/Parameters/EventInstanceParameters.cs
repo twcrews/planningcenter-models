@@ -177,6 +177,12 @@ public enum EventInstanceFilterable
   ManagerSubscriber,
 
   /// <summary>
+  /// Filter by not_pending_event_requests.
+  /// </summary>
+  [JsonApiName("not_pending_event_requests")]
+  NotPendingEventRequests,
+
+  /// <summary>
   /// Filter by owner.
   /// </summary>
   [JsonApiName("owner")]

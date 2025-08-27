@@ -35,6 +35,12 @@ public record WorkflowCardActivity
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("automation_url")]
+  public string? AutomationUrl { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("person_avatar_url")]
   public string? PersonAvatarUrl { get; init; }
 

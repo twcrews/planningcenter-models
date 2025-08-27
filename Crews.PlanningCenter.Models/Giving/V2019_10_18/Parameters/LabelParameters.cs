@@ -6,7 +6,7 @@ namespace Crews.PlanningCenter.Models.Giving.V2019_10_18.Parameters;
 public enum LabelQueryable
 {
   /// <summary>
-  /// query on a specific slug
+  /// Query on a specific slug
   /// </summary>
   [JsonApiName("slug")]
   Slug,

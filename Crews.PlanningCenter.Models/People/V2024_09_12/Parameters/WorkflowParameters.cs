@@ -31,6 +31,12 @@ public enum WorkflowIncludable
 public enum WorkflowOrderable
 {
   /// <summary>
+  /// prefix with a hyphen (-archived_at) to reverse the order
+  /// </summary>
+  [JsonApiName("archived_at")]
+  ArchivedAt,
+
+  /// <summary>
   /// prefix with a hyphen (-campus_id) to reverse the order
   /// </summary>
   [JsonApiName("campus_id")]
@@ -73,6 +79,12 @@ public enum WorkflowOrderable
 /// </summary>
 public enum WorkflowQueryable
 {
+  /// <summary>
+  /// Query on a specific archived_at
+  /// </summary>
+  [JsonApiName("archived_at")]
+  ArchivedAt,
+
   /// <summary>
   /// Query on a specific campus_id
   /// </summary>
@@ -123,6 +135,12 @@ public enum WorkflowQueryable
 public enum WorkflowFilterable
 {
   /// <summary>
+  /// Filter by archived.
+  /// </summary>
+  [JsonApiName("archived")]
+  Archived,
+
+  /// <summary>
   /// Filter by has_my_cards.
   /// </summary>
   [JsonApiName("has_my_cards")]
@@ -133,6 +151,12 @@ public enum WorkflowFilterable
   /// </summary>
   [JsonApiName("manage_cards_allowed")]
   ManageCardsAllowed,
+
+  /// <summary>
+  /// Filter by not_archived.
+  /// </summary>
+  [JsonApiName("not_archived")]
+  NotArchived,
 
   /// <summary>
   /// Filter by only_deleted.

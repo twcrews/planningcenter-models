@@ -95,14 +95,38 @@ public record Person
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("anniversary")]
+  public DateTime? Anniversary { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("birthdate")]
+  public DateTime? Birthdate { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("full_name")]
   public string? FullName { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("media_permissions")]
+  public string? MediaPermissions { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("permissions")]
   public string? Permissions { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("song_permissions")]
+  public string? SongPermissions { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -119,14 +143,8 @@ public record Person
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
-  [JsonApiName("anniversary")]
-  public DateTime? Anniversary { get; init; }
-
-  /// <summary>
-  /// Planning Center does not provide a description for this attribute.
-  /// </summary>
-  [JsonApiName("birthdate")]
-  public DateTime? Birthdate { get; init; }
+  [JsonApiName("max_plan_permissions")]
+  public string? MaxPlanPermissions { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -145,18 +163,6 @@ public record Person
   /// </summary>
   [JsonApiName("nickname")]
   public string? Nickname { get; init; }
-
-  /// <summary>
-  /// Planning Center does not provide a description for this attribute.
-  /// </summary>
-  [JsonApiName("media_permissions")]
-  public string? MediaPermissions { get; init; }
-
-  /// <summary>
-  /// Planning Center does not provide a description for this attribute.
-  /// </summary>
-  [JsonApiName("song_permissions")]
-  public string? SongPermissions { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

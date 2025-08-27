@@ -91,6 +91,12 @@ public record Group
   public string? LocationTypePreference { get; init; }
 
   /// <summary>
+  /// Whether or not group members can see other members' info
+  /// </summary>
+  [JsonApiName("members_are_confidential")]
+  public bool? MembersAreConfidential { get; init; }
+
+  /// <summary>
   /// The number of members in the group, includes leaders.
   /// Does not include membership requests.
   /// </summary>
@@ -115,6 +121,14 @@ public record Group
   /// </summary>
   [JsonApiName("schedule")]
   public string? Schedule { get; init; }
+
+  /// <summary>
+  /// The IDs of the tags associated with the group.
+  /// 
+  /// Only available when requested with the <c>?fields</c> param
+  /// </summary>
+  [JsonApiName("tag_ids")]
+  public int? TagIds { get; init; }
 
   /// <summary>
   /// The URL for the group's virtual location. A zoom link, for example.

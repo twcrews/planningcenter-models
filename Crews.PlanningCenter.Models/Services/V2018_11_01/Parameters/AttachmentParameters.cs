@@ -31,6 +31,12 @@ public enum AttachmentOrderable
   CreatedAt,
 
   /// <summary>
+  /// prefix with a hyphen (-deleted_at) to reverse the order
+  /// </summary>
+  [JsonApiName("deleted_at")]
+  DeletedAt,
+
+  /// <summary>
   /// prefix with a hyphen (-filename) to reverse the order
   /// </summary>
   [JsonApiName("filename")]
@@ -55,6 +61,12 @@ public enum AttachmentOrderable
 /// </summary>
 public enum AttachmentQueryable
 {
+  /// <summary>
+  /// Query on a related administrator
+  /// </summary>
+  [JsonApiName("administrator_id")]
+  AdministratorId,
+
   /// <summary>
   /// Query on a specific licenses_purchased
   /// </summary>

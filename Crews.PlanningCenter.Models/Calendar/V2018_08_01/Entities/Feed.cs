@@ -47,6 +47,18 @@ public record Feed
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
+  [JsonApiName("deleting")]
+  public bool? Deleting { get; init; }
+
+  /// <summary>
+  /// Only available when requested with the <c>?fields</c> param
+  /// </summary>
+  [JsonApiName("sync_campus_tags")]
+  public bool? SyncCampusTags { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
   [JsonApiName("source_id")]
   public string? SourceId { get; init; }
 

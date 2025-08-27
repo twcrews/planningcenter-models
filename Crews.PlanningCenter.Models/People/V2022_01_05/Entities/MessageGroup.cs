@@ -68,4 +68,16 @@ public record MessageGroup
   [JsonApiName("created_at")]
   public DateTime? CreatedAt { get; init; }
 
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("reply_to_name")]
+  public string? ReplyToName { get; init; }
+
+  /// <summary>
+  /// Planning Center does not provide a description for this attribute.
+  /// </summary>
+  [JsonApiName("reply_to_address")]
+  public string? ReplyToAddress { get; init; }
+
 }

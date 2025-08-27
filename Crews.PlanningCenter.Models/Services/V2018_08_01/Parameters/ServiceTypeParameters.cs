@@ -49,6 +49,12 @@ public enum ServiceTypeQueryable
   [JsonApiName("name")]
   Name,
 
+  /// <summary>
+  /// Query on a related parent
+  /// </summary>
+  [JsonApiName("parent_id")]
+  ParentId,
+
 }
 
 /// <summary>
