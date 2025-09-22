@@ -250,7 +250,7 @@ public class PlanningCenterApiReferenceService
 		"boolean" => "bool",
 		"float" => "double",
 		"array" => "IEnumerable<JsonElement>",
-		"date" => "DateOnly",
+		"date" => "DateTime",
 		_ => "JsonElement",
 	};
 }

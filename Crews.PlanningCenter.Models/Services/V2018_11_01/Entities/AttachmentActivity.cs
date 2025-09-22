@@ -18,7 +18,7 @@ public record AttachmentActivity
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("date")]
-  public DateOnly? Date { get; init; }
+  public DateTime? Date { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

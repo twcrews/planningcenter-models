@@ -58,7 +58,7 @@ public record PaymentMethod
   /// For cards only. String representation of the expiration date in the <c>MM/YYYY</c> form (without leading zeros). Will be <c>null</c> for bank accounts.
   /// </summary>
   [JsonApiName("expiration")]
-  public DateOnly? Expiration { get; init; }
+  public DateTime? Expiration { get; init; }
 
   /// <summary>
   /// For bank accounts only. Will be <c>null</c> for cards.

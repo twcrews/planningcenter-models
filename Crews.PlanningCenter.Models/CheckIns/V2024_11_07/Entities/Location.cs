@@ -65,7 +65,7 @@ public record Location
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("age_on")]
-  public DateOnly? AgeOn { get; init; }
+  public DateTime? AgeOn { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
@@ -77,7 +77,7 @@ public record Location
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("effective_date")]
-  public DateOnly? EffectiveDate { get; init; }
+  public DateTime? EffectiveDate { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
