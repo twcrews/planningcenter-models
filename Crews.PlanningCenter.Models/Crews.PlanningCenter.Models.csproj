@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>13.0</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <DefaultNamespace>Crews.PlanningCenter.Models</DefaultNamespace>
@@ -10,7 +11,7 @@
 
   <PropertyGroup>
     <PackageId>Crews.PlanningCenter.Models</PackageId>
-    <PackageVersion>1.2.0</PackageVersion>
+    <PackageVersion>1.2.1</PackageVersion>
     <Authors>Tommy Crews</Authors>
     <Description>
       Contains base models and POCO classes for the Planning Center API.
@@ -30,6 +31,10 @@
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="\" />
     <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="9.0.9" />
   </ItemGroup>
 
 </Project>

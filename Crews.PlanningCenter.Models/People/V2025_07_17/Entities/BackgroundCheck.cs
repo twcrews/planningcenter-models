@@ -42,7 +42,7 @@ public record BackgroundCheck
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("expires_on")]
-  public DateOnly? ExpiresOn { get; init; }
+  public DateTime? ExpiresOn { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

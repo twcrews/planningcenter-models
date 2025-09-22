@@ -44,4 +44,12 @@ public record EventConnection
   [JsonApiName("connected_to_url")]
   public string? ConnectedToUrl { get; init; }
 
+  /// <summary>
+  /// Whether this connection is promoted for display (only applies to Groups connections)
+  /// 
+  /// Only available when requested with the <c>?fields</c> param
+  /// </summary>
+  [JsonApiName("promoted")]
+  public bool? Promoted { get; init; }
+
 }

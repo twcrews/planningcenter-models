@@ -66,13 +66,13 @@ public record Person
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("anniversary")]
-  public DateOnly? Anniversary { get; init; }
+  public DateTime? Anniversary { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("birthdate")]
-  public DateOnly? Birthdate { get; init; }
+  public DateTime? Birthdate { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.

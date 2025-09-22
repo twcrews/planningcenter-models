@@ -63,7 +63,7 @@ public record InKindDonation
   /// Format: <c>YYYY-MM-DD</c> (e.g. <c>2025-04-09</c>).
   /// </summary>
   [JsonApiName("received_on")]
-  public DateOnly? ReceivedOn { get; init; }
+  public DateTime? ReceivedOn { get; init; }
 
   /// <summary>
   /// Optional. The fair market for an in-kind donation which should be determined by donors and appraisers. Maximum 255 characters. Example: <c>Appraised by Bob Johnson CPA (123 Easy Street, Carlsbad CA 92008)</c>

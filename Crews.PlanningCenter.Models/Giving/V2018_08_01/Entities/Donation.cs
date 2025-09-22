@@ -58,7 +58,7 @@ public record Donation
   /// The check date for donations made by check. Example: <c>2000-01-01</c>
   /// </summary>
   [JsonApiName("payment_check_dated_at")]
-  public DateOnly? PaymentCheckDatedAt { get; init; }
+  public DateTime? PaymentCheckDatedAt { get; init; }
 
   /// <summary>
   /// The fee to process a donation. This should either be 0 or a negative integer. For a donation processed by Giving via Stripe, this is the amount the associated organization paid Stripe to process it. For donations not processed by Stripe, this can be used to record fees from other systems. Note: while <c>amount_cents</c> is assigned via a donation's designations, <c>fee_cents</c> is set here, and used by Giving to distribute fees across all designations in proportion to the amount of each designation.

@@ -122,7 +122,7 @@ public record Blockout
   /// Planning Center does not provide a description for this attribute.
   /// </summary>
   [JsonApiName("repeat_until")]
-  public DateOnly? RepeatUntil { get; init; }
+  public DateTime? RepeatUntil { get; init; }
 
   /// <summary>
   /// Planning Center does not provide a description for this attribute.
